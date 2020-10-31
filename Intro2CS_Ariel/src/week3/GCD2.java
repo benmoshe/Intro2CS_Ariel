@@ -1,7 +1,6 @@
 package week3;
 
 import java.util.Scanner;
-
 public class GCD2 {
 	public static void main(String[] args) {
 		// create a scanner so we can read the command-line input

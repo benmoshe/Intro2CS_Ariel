@@ -1,4 +1,4 @@
-package week3;
+package week4;
 /**
  * This GCD example shows the difference between slow GCD to fast GCD (with mod operation).
  * 
@@ -8,7 +8,7 @@ package week3;
  */
 import java.util.Scanner;
 
-public class GCD3 {
+public class GCD4 {
 	public static void main(String[] args) {
 		// create a scanner so we can read the command-line input
 		Scanner scanner = new Scanner(System.in);

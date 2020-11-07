@@ -12,8 +12,12 @@ public class GCD2 {
 		System.out.print("Enter in integer y=");
 		int y = scanner.nextInt();
 		if(x<y) {
-			int t=x; x=y; y=t;
+			int t=x; 
+			x=y; 
+			y=t;
 		}
+		// gcd(x,y) == gcd(y,x)
+		// gcd(x,y) == gcd(x-y, y) : x>y
 		System.out.print("GCD("+x+","+y+")=");
 		while(x%y!=0) {
 			x=x-y;

@@ -9,6 +9,7 @@ package week4;
 import java.util.Scanner;
 
 public class GCD4 {
+	static boolean debug_flag = true;
 	public static void main(String[] args) {
 		// create a scanner so we can read the command-line input
 		Scanner scanner = new Scanner(System.in);
@@ -18,24 +19,44 @@ public class GCD4 {
 			int x = scanner.nextInt();
 			System.out.print("Enter in integer y=");
 			int y = scanner.nextInt();
-			if(x<y) {
-				int t=x; x=y; y=t;
-			}
-			System.out.println("GCD("+x+","+y+")=");
-			int i=1;
-			while(x%y!=0) {
-				if(flag==1) {x=x-y;}
-				if(flag==2) {x=x%y;}
-				if(x<y) {
-					int t=x; x=y; y=t;
-				}
-				System.out.println(i+") GCD("+x+","+y+")=");
-				i=i+1;
-			}
-			System.out.println(y);
+			int g = 0;
+			if(flag==1) {g=gcd1(x,y);}
+			if(flag==2) {g=gcd2(x,y);}
+			System.out.println(g);
 			System.out.print("Enter 1 for slow GCD, 2 for fast GCD or 0 to exit:");
 			flag = scanner.nextInt();
 		}
 		System.out.println("Bye Bye...");
+	}
+	/**
+	 * This is a simplify (not so efficient) implementation of GCD algorithm, as in
+	 * https://en.wikipedia.org/wiki/Euclidean_algorithm
+	 * @param x
+	 * @param y
+	 * @return the Greater COmmon Divider (GCD) of x and y.
+	 */
+	public static int gcd1(int x, int y) {
+		if(x<y) {	int t=x; x=y; y=t;}
+		while(x%y!=0) {
+			x=x%y;
+			if(x<y) {int t=x; x=y; y=t;}
+		}
+		return y;
+	}
+	/**
+	 * This is a simplify (not so efficient) implementation of GCD algorithm, as in
+	 * https://en.wikipedia.org/wiki/Euclidean_algorithm
+	 * @param x
+	 * @param y
+	 * @return the Greater COmmon Divider (GCD) of x and y.
+	 */
+	public static int gcd2(int x, int y) {
+		while (x != y) {
+			if(debug_flag) {
+				System.out.print("gcd("+x+","+y+")=");}
+        	if(x > y) {x=x-y;}
+            else {y=y-x;}
+        }
+		return y;
 	}
 }

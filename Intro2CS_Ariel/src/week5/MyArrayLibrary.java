@@ -47,4 +47,40 @@ public class MyArrayLibrary {
 		}
 		return mat;
 	}
+/**
+ * This function computes the average of all the array values.
+ * @param arr1
+ * @return
+ */
+	public static double average(int[] arr) {
+		double sum = 0;
+		for(int i=0;i<arr.length;i=i+1) {
+			sum = sum +arr[i];
+		}
+		double ave = sum / arr.length;
+		return ave;
+	}
+	/**
+	 * search for the index of the maximal value in the array;
+	 * @param arr
+	 * @return the index of the max entry in the array
+	 */
+	public static int maxIndex(int[] arr) {
+		int ans = 0;
+		for(int i=1;i<arr.length;i=i+1) {
+			if(arr[i]>arr[ans]) {ans = i;}
+		}
+		return ans;
+	}/**
+	 * search for the index of the minimal value in the array;
+	 * @param arr
+	 * @return the index of the minimum entry in the array
+	 */
+	public static int minIndex(int[] arr) {
+		int ans = 0;
+		for(int i=1;i<arr.length;i=i+1) {
+			if(arr[i]<arr[ans]) {ans = i;}
+		}
+		return ans;
+	}
 }

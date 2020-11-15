@@ -1,11 +1,7 @@
 package week5;
-
 import static org.junit.jupiter.api.Assertions.*;
-
 import org.junit.jupiter.api.Test;
-
 class GCD4Test {
-
 	@Test
 	void testGcd1() {
 		int a = 21;
@@ -18,7 +14,6 @@ class GCD4Test {
 	@Test
 	void testGcd1b() {
 		int a = 21;
-		int b = 34;
 		int g1 = GCD4.gcd1(a, a);
 		if(g1!=a) {
 			fail("Wrong answer the GCD("+a+","+a+") should be 1, got "+g1);

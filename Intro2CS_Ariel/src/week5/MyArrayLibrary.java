@@ -2,19 +2,32 @@ package week5;
 
 public class MyArrayLibrary {
 
+	/**
+	 * This function creates an array of random integers 
+	 * each in the range of [0,range]
+	 * @param size
+	 * @param range
+	 * @return
+	 */
 	public static int[] randomIntArray(int size, int range){
-		int[]arr = new int[size];
-		++range;
-		for(int i=0; i<size; i=i+1)
-			arr[i] = (int)(Math.random()*range);
-		return arr;
+		return randomIntArray(size, 0, range);
 	}
-	
-	public static int[] randomIntArray(int size, int a, int b){
+	/**
+	 * This function creates an array of random integers 
+	 * each in the range of [min,max]
+	 * @param size
+	 * @param [min,max] as a range
+	 * @return
+	 */
+	public static int[] randomIntArray(int size, int min, int max){
 		int[]arr = new int[size];
-		++b;
-		for(int i=0; i<size; i=i+1)
-			arr[i] = (int)(Math.random()*(b-a)) + a;
+		++max;
+		for(int i=0; i<size; i=i+1) {
+			double dx = max-min;
+			double t = Math.random()*dx; // [0,max-min)
+			t= t + min; // [min,max)
+			arr[i] = (int)t;
+		}
 		return arr;
 	}
 	

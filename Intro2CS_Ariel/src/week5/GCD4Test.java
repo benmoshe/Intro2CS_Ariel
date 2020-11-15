@@ -37,7 +37,7 @@ class GCD4Test {
 		int b = 3*7*13*19*47*331;
 		int exp = 3*19*47;
 		int g1 = GCD4.gcd1(a, b);
-		int g2 = GCD4.gcd1(a, b);
+		int g2 = GCD4.gcd2(a, b);
 		if(g1!=g2 ) {
 			fail("Wrong answer the GCD("+a+","+b+") should have the same answer via gcd1 & gcd2 :, g1= "+g1+"  g2="+g2);
 		}

@@ -9,7 +9,7 @@ package week5;
 import java.util.Scanner;
 
 public class GCD4 {
-	static boolean debug_flag = true;
+	public static boolean debug_flag = true;
 	public static void main(String[] args) {
 		// create a scanner so we can read the command-line input
 		Scanner scanner = new Scanner(System.in);

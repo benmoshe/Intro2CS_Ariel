@@ -1,6 +1,17 @@
 package week6;
 import java.util.Arrays;
-
+/**
+ * output for 40,000 int array:
+ * Bubble sort time = 2.617 secs,  is sorted? true
+ * Selection sort time = 0.536 secs,  is sorted? true
+ * Insertion sort time = 0.818 secs,  is sorted? true
+ * My slow Insertion sort time = 4.253 secs,  is sorted? true
+ * Recursive Merge sort time = 0.025 secs,  is sorted? true
+ * Java sort time = 0.023 secs,  is sorted? true
+ *
+ * Found at index 20034 the item 20000
+ *
+ */
 public class Sort {
 
 	public static void swap(int[] arr, int i, int j)  {
@@ -161,6 +172,7 @@ public class Sort {
 		int[] arr3 = Arrays.copyOf(arr1,arr1.length);
 		int[] arr4 = Arrays.copyOf(arr1,arr1.length);
 		int[] arr5 = Arrays.copyOf(arr1,arr1.length);
+		int[] arr6 = Arrays.copyOf(arr1,arr1.length);
 
 		//////// bubbleSort
 		long start = System.currentTimeMillis();
@@ -182,57 +194,33 @@ public class Sort {
 
 		///////// MyInsertionSort (should be slow!!)
 		start = System.currentTimeMillis();
-		mergeSort(arr4);
+		myInsertionSort(arr4);
 		end = System.currentTimeMillis();
-		System.out.println("Merge sort time = "+(end-start)/1000.+" secs,  is sorted? "+ MyArrayLibrary.isSortedAscending(arr4));
+		System.out.println("My slow Insertion sort time = "+(end-start)/1000.+" secs,  is sorted? "+ MyArrayLibrary.isSortedAscending(arr4));
+
+		/////////// Recursive Merge Sort 
+		start = System.currentTimeMillis();
+		mergeSort(arr5);
+		end = System.currentTimeMillis();
+		System.out.println("Recursive Merge sort time = "+(end-start)/1000.+" secs,  is sorted? "+ MyArrayLibrary.isSortedAscending(arr5));
 		
 		////////// Java  built-in sort (Dual-pivot Quicksort)
 		start = System.currentTimeMillis();
-		Arrays.sort(arr5);
+		Arrays.sort(arr6);
 		end = System.currentTimeMillis();
-		System.out.println("Java sort time = "+(end-start)/1000.+" secs,  is sorted? "+ MyArrayLibrary.isSortedAscending(arr5));						
+		System.out.println("Java sort time = "+(end-start)/1000.+" secs,  is sorted? "+ MyArrayLibrary.isSortedAscending(arr6));						
 		
-		/**
-		// now with a partially sorted array
-		System.out.println();
-		System.out.println("Now with a partially sorted array:");
-		for(int i=0; i < arr1.length/100 ; i++)
-			swap(arr1, (int)(Math.random()*arr1.length), (int)(Math.random()*arr1.length));
-		arr2 = Arrays.copyOf(arr1,arr1.length);
-		arr3 = Arrays.copyOf(arr1,arr1.length);
-		arr4 = Arrays.copyOf(arr1,arr1.length);
-		
-		//////// bubbleSort
-		start = System.currentTimeMillis();
-		bubbleSort(arr1);
-		end = System.currentTimeMillis();
-		System.out.println("Bubble sort time = "+(end-start)/1000.+" secs,  is sorted? "+ MyArrayLibrary.isSortedAscending(arr1));
-		
-		//////// selectionSort
-		start = System.currentTimeMillis();
-		selectionSort(arr2);
-		end = System.currentTimeMillis();
-		System.out.println("Selection sort time = "+(end-start)/1000.+" secs,  is sorted? "+ MyArrayLibrary.isSortedAscending(arr2));
-
-		//////// insertionSort
-		start = System.currentTimeMillis();
-		insertionSort(arr3);
-		end = System.currentTimeMillis();
-		System.out.println("Insertion sort time = "+(end-start)/1000.+" secs,  is sorted? "+ MyArrayLibrary.isSortedAscending(arr3));
-
-		////////// Java  built-in sort (Dual-pivot Quicksort)
-		start = System.currentTimeMillis();
-		Arrays.sort(arr4);
-		end = System.currentTimeMillis();
-		System.out.println("Java sort time = "+(end-start)/1000.+" secs,  is sorted? "+ MyArrayLibrary.isSortedAscending(arr4));
 		
 		/// binary  search
-/*		int found = binarySearch(arr4,20,0,arr4.length-1);
-		if(found != -1)
-			System.out.println("Found at index " + found + " the item " + arr4[found]);
-		else
-			System.out.println("I didn't find it");*/
+		System.out.println();
 		
+		int found = binarySearch(arr4,arr4.length/2,0,arr4.length-1);
+		if(found != -1) {
+			System.out.println("Found at index " + found + " the item " + arr4[found]);
+		}
+		else {
+			System.out.println("I didn't find it");
+		}
 	}
 	
 	

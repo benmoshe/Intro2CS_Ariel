@@ -15,7 +15,28 @@ class SortTest {
 	@BeforeEach
 	void setUp() throws Exception {
 	}
-
+	@Test 
+	void testMergeSort() {
+		int[] a1 = {3,1,2,1,42};
+		Sort.mergeSort(a1);
+		boolean isSorted = MyArrayLibrary.isSortedAscending(a1);
+		assertTrue(isSorted);
+	}
+	@Test 
+	void testMergeSort_large_array() {
+		int[] a1 = MyArrayLibrary.randomIntArray(1000, 1000);
+		Sort.mergeSort(a1);
+		boolean isSorted = MyArrayLibrary.isSortedAscending(a1);
+		assertTrue(isSorted);
+	}
+	@Test 
+	void testMerge() {
+		int[] a1 = {1,3,7,9};
+		int[] a2 = {1,2,5,17,34};
+		int[] a12 = Sort.mergeArrays(a1, a2);
+		boolean isSorted = MyArrayLibrary.isSortedAscending(a12);
+		assertTrue(isSorted);
+	}
 	@Test
 	void testSwap() {
 		int[] arr = {0,1,2,3,4};

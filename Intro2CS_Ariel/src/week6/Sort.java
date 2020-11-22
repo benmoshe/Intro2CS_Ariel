@@ -106,6 +106,53 @@ public class Sort {
 			}
 			return ans;
 		}
+		
+		//////////// MERGE SORT ////////////////
+		
+		public static void mergeSort(int[] a) {
+			int size = a.length;
+			if(size>=2) {
+				int mid = size/2;
+				int[] left = getSubArray(a,0,mid);
+				int[] right = getSubArray(a,mid,size);
+				mergeSort(left); // recursive call
+				mergeSort(right); // recursive call
+				int[] merge = mergeArrays(left,right);
+				for(int i=0;i<merge.length;i=i+1) {
+					a[i] = merge[i];
+				}
+			}
+		}
+		public static int[] getSubArray(int[] a, int min, int max) {
+			int[] ans = new int[max-min];
+			for(int i=min;i<max;i=i+1) {
+				ans[i-min] = a[i];
+			}
+			return ans;
+		}
+		
+		/**
+		 * This function merges two sorted arrays into a single 
+		 * sorted array.
+		 * @param arr1
+		 * @param arr2
+		 * @return
+		 */
+		public  static  int[]  mergeArrays(int arr1[],  int arr2[]) {
+		    int[]  res = new int[arr1.length + arr2.length];
+			int i=0, j=0;
+			while ( i < arr1.length && j < arr2.length )	{
+				if (arr1[i] <= arr2[j]) { 
+				      res[i+j] = arr1[i]; i=i+1;
+				}
+				else {
+				      res[i+j] = arr2[j]; j=j+1;
+				}
+			}
+			while ( i < arr1.length) {res[i+j] = arr1[i++];}
+			while ( j < arr2.length) {res[i+j] = arr2[j++];}
+		     return res;
+		}
 	
 	public static void main(String[] args) {
 		final int SIZE = 40000; // then change upto 100000
@@ -135,15 +182,16 @@ public class Sort {
 
 		///////// MyInsertionSort (should be slow!!)
 		start = System.currentTimeMillis();
-		myInsertionSort(arr4);
+		mergeSort(arr4);
 		end = System.currentTimeMillis();
-		System.out.println("MySlowInsertion sort time = "+(end-start)/1000.+" secs,  is sorted? "+ MyArrayLibrary.isSortedAscending(arr4));
+		System.out.println("Merge sort time = "+(end-start)/1000.+" secs,  is sorted? "+ MyArrayLibrary.isSortedAscending(arr4));
 		
 		////////// Java  built-in sort (Dual-pivot Quicksort)
 		start = System.currentTimeMillis();
-		Arrays.sort(arr4);
+		Arrays.sort(arr5);
 		end = System.currentTimeMillis();
-		System.out.println("Java sort time = "+(end-start)/1000.+" secs,  is sorted? "+ MyArrayLibrary.isSortedAscending(arr4));						
+		System.out.println("Java sort time = "+(end-start)/1000.+" secs,  is sorted? "+ MyArrayLibrary.isSortedAscending(arr5));						
+		
 		/**
 		// now with a partially sorted array
 		System.out.println();

@@ -76,7 +76,7 @@ public class Sort {
 	}
 	
 	public static void main(String[] args) {
-		final int SIZE = 30; // then change upto 100000
+		final int SIZE = 10000; // then change upto 100000
 		int[] arr1 = MyArrayLibrary.randomIntArray(SIZE, SIZE);
 		int[] arr2 = Arrays.copyOf(arr1,arr1.length);
 		int[] arr3 = Arrays.copyOf(arr1,arr1.length);
@@ -105,21 +105,10 @@ public class Sort {
 		start = System.currentTimeMillis();
 		Arrays.sort(arr4);
 		end = System.currentTimeMillis();
-		System.out.println("Java sort time = "+(end-start)/1000.+" secs,  is sorted? "+ MyArrayLibrary.isSortedAscending(arr4));
-
-		////////// countingSort
-/*		start = System.currentTimeMillis();
-		countingSort(arr5,SIZE);
-		end = System.currentTimeMillis();
-		System.out.println("Counting sort time = "+(end-start)/1000.+" secs,  is sorted? "+ MyArrayLibrary.isSortedAscending(arr5));*/
-		
-
-		
-		
-		
-		
+		System.out.println("Java sort time = "+(end-start)/1000.+" secs,  is sorted? "+ MyArrayLibrary.isSortedAscending(arr4));						
 		
 		// now with a partially sorted array
+		System.out.println();
 		System.out.println("Now with a partially sorted array:");
 		for(int i=0; i < arr1.length/100 ; i++)
 			swap(arr1, (int)(Math.random()*arr1.length), (int)(Math.random()*arr1.length));

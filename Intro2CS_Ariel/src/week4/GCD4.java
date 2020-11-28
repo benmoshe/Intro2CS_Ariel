@@ -20,8 +20,12 @@ public class GCD4 {
 			System.out.print("Enter in integer y=");
 			int y = scanner.nextInt();
 			int g = 0;
-			if(flag==1) {g=gcd1(x,y);}
-			if(flag==2) {g=gcd2(x,y);}
+			if(flag==1) {
+				g=gcd1(x,y);
+			}
+			if(flag==2) {
+				g=gcd2(x,y);
+			}
 			System.out.println(g);
 			System.out.print("Enter 1 for slow GCD, 2 for fast GCD or 0 to exit:");
 			flag = scanner.nextInt();
@@ -33,12 +37,16 @@ public class GCD4 {
 	 * https://en.wikipedia.org/wiki/Euclidean_algorithm
 	 * @param x
 	 * @param y
-	 * @return the Greater COmmon Divider (GCD) of x and y.
+	 * @return the Greater Common Divider (GCD) of x and y.
 	 */
 	public static int gcd1(int x, int y) {
 		if(x<y) {	int t=x; x=y; y=t;}
+		int i=0;
 		while(x%y!=0) {
+			if(debug_flag) {
+				System.out.print("gcd_"+i+"("+x+","+y+")=");}
 			x=x%y;
+			i=i+1;
 			if(x<y) {int t=x; x=y; y=t;}
 		}
 		return y;

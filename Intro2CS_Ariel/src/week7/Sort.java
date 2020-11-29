@@ -259,7 +259,7 @@ public class Sort {
 			return binarySearch(arr,item,middle+1,right);
 	}
 
-	//sort array which contains numbers in the range [0,N]
+	//sort array which contains numbers in the range [0,N)
 	public static void countingSort(int[]arr, int N) {
 		int index;
 		N++;
@@ -267,7 +267,7 @@ public class Sort {
 		for (int i = 0; i < arr.length; i++)
 		{
 			index = arr[i];
-			freq[index]++;
+			freq[index]=freq[index]+1;
 		}
 		int j = 0;
 		for (int k=0; k<freq.length; k++)

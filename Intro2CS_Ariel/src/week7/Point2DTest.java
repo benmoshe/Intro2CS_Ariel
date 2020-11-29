@@ -19,6 +19,7 @@ class Point2DTest {
 		_oo = Point2D.ORIGIN;
 		_p1 = new Point2D(3,4);
 		_p2 = new Point2D(9,12);
+		Point2D a1;
 	}
 
 	@Test

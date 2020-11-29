@@ -1,5 +1,7 @@
 /**
+
  * This class represents a 2D point in the plane.
+ * Our first example of Object Oriented Programming
  */
 
 package week7;

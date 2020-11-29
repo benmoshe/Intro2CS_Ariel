@@ -174,7 +174,7 @@ public class Sort {
 		double[] arr4 = Arrays.copyOf(arr1,arr1.length);
 		double[] arr5 = Arrays.copyOf(arr1,arr1.length);
 		double[] arr6 = Arrays.copyOf(arr1,arr1.length);
-
+		double[] arr7 = Arrays.copyOf(arr1,arr1.length);
 		//////// bubbleSort
 		long start = System.currentTimeMillis();
 		bubbleSort(arr1);
@@ -211,14 +211,25 @@ public class Sort {
 		start = System.currentTimeMillis();
 		mergeSort(arr5);
 		end = System.currentTimeMillis();
-		System.out.println("Recursive Merge sort time = "+(end-start)/1000.+" secs,  is sorted? "+ MyArrayLibrary.isSortedAscending(arr5));
+		b = MyArrayLibrary.isSortedAscending(arr5);
+		dt = (end-start)/1000.0;
+		System.out.println("Recursive Merge sort time = "+dt+" secs,  is sorted? "+ b);
 		
 		////////// Java  built-in sort (Dual-pivot Quicksort)
 		start = System.currentTimeMillis();
 		Arrays.sort(arr6);
 		end = System.currentTimeMillis();
-		System.out.println("Java sort time = "+(end-start)/1000.+" secs,  is sorted? "+ MyArrayLibrary.isSortedAscending(arr6));						
+		b = MyArrayLibrary.isSortedAscending(arr6);
+		dt = (end-start)/1000.0;
+		System.out.println("Java sort time = "+dt+" secs,  is sorted? "+ b);
 		
+		////////// "Our" pivot Quicksort)
+		start = System.currentTimeMillis();
+		QuickSort.sort(arr7);
+		end = System.currentTimeMillis();
+		b = MyArrayLibrary.isSortedAscending(arr7);
+		dt = (end-start)/1000.0;
+		System.out.println("Our QuickSort time = "+dt+" secs,  is sorted? "+ b);
 		
 		/// binary  search
 		System.out.println();

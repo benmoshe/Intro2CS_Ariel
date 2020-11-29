@@ -15,7 +15,7 @@ class SortTest {
 	}
 	@Test 
 	void testMergeSort() {
-		double[] a1 = {3,1,2,1.1,42, 1.1};
+		double[] a1 = {3,1,2,42, 1.3};
 		Sort.mergeSort(a1);
 		boolean isSorted = MyArrayLibrary.isSortedAscending(a1);
 		assertTrue(isSorted);

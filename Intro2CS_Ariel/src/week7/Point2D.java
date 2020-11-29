@@ -1,16 +1,19 @@
 /**
-
  * This class represents a 2D point in the plane.
  * Our first example of Object Oriented Programming
  */
 
 package week7;
+
 public class Point2D {
     public static final double EPS1 = 0.001, EPS2 = Math.pow(EPS1,2), EPS=EPS2;
     public static final Point2D ORIGIN = new Point2D(0,0);
-    private double _x,_y;
-    public Point2D(double x,double y) {
-    	_x=x; _y=y;
+    
+    private double _x;
+    private double _y;
+    
+    public Point2D(double a,double b) {
+    	_x=a; _y=b;
     }
     public Point2D(Point2D p) {
        this(p.x(), p.y());
@@ -33,7 +36,7 @@ public class Point2D {
     public int iy() {return (int)_y;}
   
     public Point2D add(Point2D p) {
-    	Point2D a = new Point2D(p.x()+x(),p.y()+y());
+    	Point2D a = new Point2D(p.x()+x(),p.y()+this.y());
     	return a;
     }
 
@@ -67,5 +70,14 @@ public class Point2D {
     public boolean close2equals(Point2D p2)
     {
         return close2equals(p2, EPS);
+    }
+    
+    public static void main(String[] args) {
+    	Point2D p1 = new Point2D(1,2);
+    	Point2D p2 = new Point2D(5,5);
+    	double dist = p1.distance(p2);
+    	System.out.println("The distance is: "+dist);
+    	Point2D p3 = p1.add(p2);
+    	System.out.println("p3 is "+p3);
     }
 }

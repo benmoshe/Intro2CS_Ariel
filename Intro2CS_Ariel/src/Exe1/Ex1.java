@@ -32,7 +32,7 @@ import java.util.Scanner;
  * 3) 	return g;
  * 
  * Example:
- * GCPD(66,132):
+ * GCPD(264,396):
  * g = gcd(264,396) = gcd(396,264) = gcd(264,132) = 132
  * 132 = 2*2*3*11 
  * gpd(132),i=2, 132%2==0, 132/2

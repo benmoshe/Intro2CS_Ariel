@@ -27,14 +27,14 @@ public class Point { // the class name should be the same name as the .java file
     public double y() {return _y;}
  
   /** Add a vector */
-    public Point2D add(Point2D p) {
-    	Point2D a = new Point2D(p.x()+x(),p.y()+this.y());
+    public Point add(Point p) {
+    	Point a = new Point(p.x()+this.x(),p.y()+this.y());
     	return a;
     }
 
     public String toString()
     {
-        return _x+","+_y;
+        return "("+this.x()+","+_y+")";
     }
 
     public double distance(Point p2)
@@ -56,6 +56,9 @@ public class Point { // the class name should be the same name as the .java file
     	Point p2 = new Point(5,5);
     	double dist = p1.distance(p2);
     	System.out.println("The distance is: "+dist);
+    	Point p3 = p1.add(p2); 
+    	System.out.println("p3 = "+p3);
+    //	System.err.println("p3 = "+p3);
    
     }
 }

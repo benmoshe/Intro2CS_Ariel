@@ -6,7 +6,7 @@
 package week8;
 
 public class Point { // the class name should be the same name as the .java file
-   
+	public static final double EPS = 0.001;
     private double _x;  // private data members
     private double _y;
     
@@ -45,19 +45,27 @@ public class Point { // the class name should be the same name as the .java file
         return Math.sqrt(t);
     }
 
-
+    public boolean close2equals(Point p2) { 
+    	return close2equals(p2,EPS);
+    }
     public boolean close2equals(Point p2, double eps)
     {
-        return ( this.distance(p2) < eps );
+    	double d = this.distance(p2);
+    	boolean ans = d<eps;
+        return ans;
     }
   
     public static void main(String[] args) {
-    	Point p1 = new Point(1,2);
-    	Point p2 = new Point(5,5);
-    	double dist = p1.distance(p2);
+    	Point pp1 = new Point(1,2);
+    	Point pp2 = new Point(5,5);
+    	double dist = pp1.distance(pp2);
     	System.out.println("The distance is: "+dist);
-    	Point p3 = p1.add(p2); 
-    	System.out.println("p3 = "+p3);
+    	Point pp3 = pp1.add(pp2); 
+    	System.out.println("p3 = "+pp3);
+    	Point p12 = pp1.add(pp2); // (6,7)
+    	Point p21 = pp2.add(pp1); // (6,7)
+    	boolean close = p12.close2equals(p21);
+    	boolean eq = p12 == p21;
     //	System.err.println("p3 = "+p3);
    
     }

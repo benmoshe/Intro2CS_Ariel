@@ -23,9 +23,15 @@ public class Point2D { // the class name should be the same name as the .java fi
     /** Copy Constructor */
     public Point2D(Point2D p) {
        this(p.x(), p.y());
+       // _x = p.x(); _y = p.y();
     }
+    /**
+     * String sp = "2.3,-3.1";
+     * Point2D p = new Point2D(sp);
+     * @param s
+     */
     public Point2D(String s) {
-        try {
+        try { //?
             String[] a = s.split(",");
             _x = Double.parseDouble(a[0]);
             _y = Double.parseDouble(a[1]);

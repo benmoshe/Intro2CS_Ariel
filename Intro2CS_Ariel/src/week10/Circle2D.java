@@ -13,6 +13,7 @@ public class Circle2D implements GeoShape{
 		this._center = new Point2D(cen);
 		this._radius = rad;
 	}
+	public double getRadius() {return this._radius;}
 	 @Override
 	    public String toString()
 	    { return "Circle2D: ("+_center.toString()+")  rad: "+_radius;}

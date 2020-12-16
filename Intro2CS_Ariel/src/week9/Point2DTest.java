@@ -135,7 +135,8 @@ class Point2DTest {
 		double x = Math.random(); // [0,1)
 		double y = Math.random(); // [0,1)
 		x = 2*(x-0.5); //[-1,1)
-		y = 2*(y-0.5);
+		y = 2*(y-0.5); //[-1,1) 
+		// the overall area is ~4
 		return new Point2D(x,y);
 	}
 

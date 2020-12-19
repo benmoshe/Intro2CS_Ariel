@@ -1,0 +1,7 @@
+GUIShape,255,false,0,Point2D,0.2,0.4
+GUIShape,16711680,true,1,Circle2D,0.1,0.2, 0.14
+GUIShape,65280,true,2,Rect2D,0.1,0.2,0.5,0.45
+GUIShape,65535,false,3,Rect2D,0.1,0.2,0.17,0.77
+GUIShape,16762880,false,4,Triangle2D,0.8,0.7,0.3,0.65,0.1,0.1
+GUIShape,16756655,false,5,Segment2D,0.2,0.6,0.7,0.2
+GUIShape,8421504,false,6,Rect2D,-0.04000000000000001,0.06,0.8,0.77

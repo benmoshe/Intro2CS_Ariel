@@ -54,7 +54,7 @@ public interface GeoShape {
 	 * Point2D, a copy of it.
 	 * Segment: the two end points
 	 * Circle: center and a point on the boundary (in this order).
-	 * Rectangle: all 4 points
+	 * Rectangle: 2 Points min,max
 	 * Triangle: all 3 points
 	 * Ellipse: two centers and a point on the boundary
 	 * Polygon: all points (in order).

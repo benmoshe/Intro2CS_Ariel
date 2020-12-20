@@ -15,7 +15,12 @@ public class Point2Ds {
 	}
 	public int size() {return _ind;}
 	public int capacity() {return _ps.length;}
-	public Point2D get(int i) {return _ps[i];}
+	public Point2D get(int i) {
+		if(i<0 || i>=size()) {
+			throw new RuntimeException("Err: "+i+" is out of range [0,"+size()+")");
+		}
+		return _ps[i];
+	}
 	public void add(Point2D p) {
 		if(isFull()) {resize(size()*2);}
 		_ps[_ind] = p; // shallow copy!!

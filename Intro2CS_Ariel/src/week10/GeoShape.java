@@ -28,7 +28,8 @@ public interface GeoShape {
 	 */
 	public double area();
 	/**
-	 * Computes the perimeter of this shape, return 0 in case of a circle and the length of the segment in case of a segment. 
+	 * Computes the perimeter of this shape, return 0 in case of a point and 
+	 * the twice the length of the case of a segment. 
 	 * @return
 	 */
 	public double perimeter();

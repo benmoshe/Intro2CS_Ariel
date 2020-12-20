@@ -24,7 +24,8 @@ public class Point2D implements GeoShape{
         }
         catch(IllegalArgumentException e) {
             System.err.println("ERR: got wrong format string for Point2D init, got:"+s+"  should be of format: x,y");
-            throw(e);
+            e.printStackTrace();
+         //   throw(e);
         }
     }
     public double x() {return _x;}
@@ -42,7 +43,6 @@ public class Point2D implements GeoShape{
     {
         return _x+","+_y;
     }
-
     public double distance()
     {
         return this.distance(ORIGIN);
@@ -55,8 +55,7 @@ public class Point2D implements GeoShape{
         return Math.sqrt(t);
     }
 
-    public boolean equals(Object p)
-    {
+    public boolean equals(Object p)  {
         if(p==null || !(p instanceof Point2D)) {return false;}
         Point2D p2 = (Point2D)p;
         return ( (_x==p2._x) && (_y==p2._y));

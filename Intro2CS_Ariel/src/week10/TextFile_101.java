@@ -15,7 +15,7 @@ import java.util.Scanner;
  */
 public class TextFile_101 {
 	public static void main(String[] a) {
-		String str = "file_.txt";
+		String str = "file_123.txt";
 		String data = "This is a multi String file,\n"
 				+ "second line ...\n 3dr...";
 		save(str, data);

@@ -11,6 +11,9 @@ public class Circle2D implements GeoShape{
 	
 	public Circle2D(Point2D cen, double rad) {
 		this._center = new Point2D(cen);
+		if(rad<0) {
+			throw new RuntimeException("Err got a negative radius for Circle init");
+		}
 		this._radius = rad;
 	}
 	public double getRadius() {return this._radius;}

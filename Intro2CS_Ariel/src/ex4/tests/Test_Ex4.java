@@ -104,10 +104,27 @@ Done! bye bye..
  */
 public class Test_Ex4 {
 	public static void main(String[] a) {
+		test0();
 	//	test1(); // 	once you compete the implementation you can try test1 as well
-		test2();
+	//	test2(); // 	once you compete the implementation you can try test2 as well
 	}
-	
+	public static void test0() {
+		Point2D p1 = new Point2D(0.1,0.2);
+		
+		Circle2D c1 = new Circle2D(p1,0.14);
+		//Rect2D r1 = new Rect2D(p1, new Point2D(0.5,0.45));
+		//Rect2D r2 = new Rect2D(p1, new Point2D(0.17,0.77));
+		Point2D a1 = new Point2D(0.8,0.7), a2 = new Point2D(0.3,0.65), a3 = new Point2D(0.1,0.1);;
+		//Triangle2D t1 = new Triangle2D(a1,a2,a3);
+		p1.move(p1);
+		//Segment2D seg1 = new Segment2D(new Point2D(0.2,0.6), new Point2D(0.7,0.2));
+		int tag=0;
+		GUI_Shape s1 = new GUIShape();
+		s1.setColor(Color.blue);
+		s1.setFilled(true);
+		s1.setTag(tag++);
+		s1.setShape(c1);
+	}
 /*	public static void test1() {
 		Ex4 win = new Ex4();
 		GUI_Shape_Collection sc = win.getShape_Collection();

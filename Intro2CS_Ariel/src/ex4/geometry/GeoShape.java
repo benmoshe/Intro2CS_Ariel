@@ -30,7 +30,7 @@ public interface GeoShape {
 	 */
 	public double area();
 	/**
-	 * Computes the perimeter of this shape, return 0 in case of a circle and the length of the segment in case of a segment. 
+	 * Computes the perimeter of this shape, return 0 in case of a point and twice the length of in the case of a segment. 
 	 * @return
 	 */
 	public double perimeter();
@@ -56,11 +56,8 @@ public interface GeoShape {
 	 * Point2D, a copy of it.
 	 * Segment: the two end points
 	 * Circle: center and a point on the boundary (in this order).
-	 * Rectangle: all 4 points
+	 * Rectangle: min,max 2 points (left-low, right-up).
 	 * Triangle: all 3 points
-	 * Ellipse: two centers and a point on the boundary
-	 * Polygon: all points (in order).
-	 * Path: all points (in order).
 	 * @return an array with all the points representing this GeoShape.
 	 */
 	public Point2D[] getPoints();

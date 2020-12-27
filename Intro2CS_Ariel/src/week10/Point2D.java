@@ -69,9 +69,9 @@ public class Point2D implements GeoShape{
         return close2equals(p2, EPS);
     }
     /**
-     * This method returns the vector between this point and the target point. The vector is represented as a Point2D.
+     * This method returns the new vector between this point and the target point. The vector is represented as a Point2D.
      * @param target
-     * @return
+     * @return a new point2D (as a vector)
      */
     public Point2D vector(Point2D target) {
     	double dx = target.x() - this.x();

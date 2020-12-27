@@ -3,7 +3,7 @@ package week10;
 import java.util.Comparator;
 /**
  * This class is WRONGLY written and its main goal is to open a discussion on interfaces
- * and OOP, without the need to use Generics (aka <>).
+ * and OOP, without the need to use Generics (aka "<>").
  * @author boaz.benmoshe
  *
  */

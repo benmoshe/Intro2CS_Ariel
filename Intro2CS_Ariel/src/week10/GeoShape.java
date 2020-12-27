@@ -34,7 +34,7 @@ public interface GeoShape {
 	 */
 	public double perimeter();
 	/**
-	 * Move this shape by the vector 0,0-->vec
+	 * Move this shape by the vector 0,0 to vec
 	 * Note: this method changes the inner state of the object.
 	 * @param vec - a vector from the 0,0
 	 */

@@ -82,13 +82,16 @@ public class Point2D implements GeoShape{
     	return new Point2D(dx,dy);
     }
 	@Override
+	/**
+	 * Note: this code was updated (in v0.2) in order to follow the notion of "close shapes".
+	 */
 	public boolean contains(Point2D ot) {
-		// TODO Auto-generated method stub
-		return false;
+		// Updated on v0.2
+		// return false;
+		return this.equals(ot);
 	}
 	@Override
 	public Point2D centerOfMass() {
-		// TODO Auto-generated method stub
 		return new Point2D(this);
 	}
 	@Override

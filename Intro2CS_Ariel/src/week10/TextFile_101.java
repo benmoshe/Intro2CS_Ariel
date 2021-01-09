@@ -1,6 +1,7 @@
 package week10;
 
 import java.io.File;
+import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.util.Scanner;
 /**
@@ -14,12 +15,14 @@ import java.util.Scanner;
  *
  */
 public class TextFile_101 {
-	public static void main(String[] a) {
+	public static void main(String[] a) throws FileNotFoundException {
 		String str = "file_123.txt";
 		String data = "This is a multi String file,\n"
-				+ "second line ...\n 3dr...";
+				+ "second line ...\n 3dr... \n \n \n EOF";
 		save(str, data);
 		load(str);
+		System.out.println("OK");
+		
 	}
 	public static void save(String file, String data) {
 		 try {
@@ -35,8 +38,8 @@ public class TextFile_101 {
 		
 	}
 
-	public static void load(String file) {
-		try {
+	public static void load(String file) throws FileNotFoundException {
+		//try {
 			File myObj = new File(file);
 		    Scanner myReader = new Scanner(myObj);
 		    int i=0;
@@ -46,10 +49,10 @@ public class TextFile_101 {
 		        i=i+1;
 		    }
 		    myReader.close();
-		}
-		catch(Exception e) {
-			e.printStackTrace();
-		}
+		//}
+	//	catch(Exception e) {
+	//		e.printStackTrace();
+	//	}
 	}
 	
 }

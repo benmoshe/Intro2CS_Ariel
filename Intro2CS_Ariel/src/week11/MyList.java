@@ -69,7 +69,7 @@ public class MyList implements MyListInterface{
 		return ans;
 	}
 	public String toString() {
-		String ans = "LinkList: ";
+		String ans = "LinkedList: ";
 		for(int i=0;i<size();i=i+1) {
 			ans +=get(i)+",";
 		}

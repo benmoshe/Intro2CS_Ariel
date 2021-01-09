@@ -23,7 +23,7 @@ public interface MyListInterface {
 	/**
 	 * Tests if a String a is a member of this List.
 	 * @param a
-	 * @return true - iff a is member of thie List.
+	 * @return true - iff a is member of this List.
 	 */
 	public boolean contains(String a);
 	/**

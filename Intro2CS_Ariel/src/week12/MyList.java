@@ -1,6 +1,6 @@
 package week12;
 /**
- * Class 11 example, to be completed as a "self - homework"
+ * Class 11 improvement example, to be completed as a "self - homework"
  * @author boaz.benmoshe
  *
  */
@@ -16,7 +16,7 @@ public class MyList<T> implements MyListInterface<T>{
 
 	@Override
 	public void addAt(T a, int ind) {
-		if(ind<0 | ind>size()) { throw new RuntimeException("Err: the ind: ["+ind+"] is out of range");}
+		if(ind<0 | ind>=size()) { throw new RuntimeException("Err: the ind: ["+ind+"] is out of range");}
 		if(ind==0) {	
 			_first = new Link<T>(a,_first);}
 		else {

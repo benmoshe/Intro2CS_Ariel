@@ -8,6 +8,16 @@ public class MyList<T> implements MyListInterface<T>{
 
 	private Link<T> _first;
 	public MyList() {_first = null;}
+	public MyList(MyListInterface<T> l) {
+		this();
+		for(int i=0;i<l.size();i=i+1) {
+			this.add(l.get(i));
+		}
+	}
+	public MyList(T t) {
+		this();
+		this.add(t);
+	}
 	@Override
 	public void add(T a) {
 		Link<T> f = new Link<T>(a,_first);

@@ -2,7 +2,7 @@ package ex4.geometry;
 /** 
  * This class represents a 2D circle in the plane. Please make sure you update it 
  * according to the GeoShape interface.
- * Ex4: you can update this class (additional documentation is needed)!
+ * Ex4: you can update this class!
  * @author boaz.benmoshe
  *
  */

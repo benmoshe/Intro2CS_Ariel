@@ -2,7 +2,6 @@ package ex4;
 /**
  * This class represents a set of parameters for Ex3 GUI Shape application for:
  * Introduction to Computer Science 2020, Ariel University.
- * Ex4: you should NOT change this class!
  * @author boaz.benmoshe
  */
 public class Ex4_Const {

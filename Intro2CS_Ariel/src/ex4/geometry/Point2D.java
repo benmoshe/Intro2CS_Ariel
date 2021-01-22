@@ -81,7 +81,7 @@ public class Point2D implements GeoShape{
     	double dy = target.y() - this.y();
     	return new Point2D(dx,dy);
     }
-	@Override
+    @Override
 	/**
 	 * Note: this code was updated (in v0.2) in order to follow the notion of "close shapes".
 	 */
@@ -92,6 +92,7 @@ public class Point2D implements GeoShape{
 	}
 	@Override
 	public Point2D centerOfMass() {
+		// TODO Auto-generated method stub
 		return new Point2D(this);
 	}
 	@Override

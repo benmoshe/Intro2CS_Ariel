@@ -1,0 +1,1320 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:UMLLabProfile="http:///schemas/UMLLabProfile/NS/0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/UMLLabProfile/NS/0 pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile">
+  <uml:Model xmi:id="_vG4MME07EeuDP5XTX0eOOA" name="CS_101">
+    <eAnnotations xmi:id="_vYMlsE07EeuDP5XTX0eOOA" source="http://ns.yatta.de/umllab">
+      <contents xmi:type="ecore:EAnnotation" xmi:id="_vYPpAE07EeuDP5XTX0eOOA" source="codegen">
+        <details xmi:id="_vYPpAU07EeuDP5XTX0eOOA" key="codegenDirectory" value="/CS-101/src"/>
+        <details xmi:id="_v4P-wE07EeuDP5XTX0eOOA" key="AssociatedSourceCode" value="/CS-101/src/ex4/geometry/Circle2D.java;3965547477/1;/CS-101/src/ex4/geometry/GeoShape.java;3036370922/1;/CS-101/src/ex4/geometry/Point2D.java;4007819471/1;/CS-101/src/ex4/geometry/Rect2D.java;2347539379/1;/CS-101/src/ex4/geometry/Segment2D.java;3733097238/1;/CS-101/src/ex4/geometry/Triangle2D.java;2997168363/1;"/>
+      </contents>
+    </eAnnotations>
+    <elementImport xmi:id="_vprXQE07EeuDP5XTX0eOOA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+    </elementImport>
+    <elementImport xmi:id="_vptMcE07EeuDP5XTX0eOOA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#byte"/>
+    </elementImport>
+    <elementImport xmi:id="_vptMcU07EeuDP5XTX0eOOA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+    </elementImport>
+    <elementImport xmi:id="_vptzgE07EeuDP5XTX0eOOA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+    </elementImport>
+    <elementImport xmi:id="_vptzgU07EeuDP5XTX0eOOA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+    </elementImport>
+    <elementImport xmi:id="_vptzgk07EeuDP5XTX0eOOA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+    </elementImport>
+    <elementImport xmi:id="_vptzg007EeuDP5XTX0eOOA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+    </elementImport>
+    <elementImport xmi:id="_vptzhE07EeuDP5XTX0eOOA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#short"/>
+    </elementImport>
+    <elementImport xmi:id="_vpvBoE07EeuDP5XTX0eOOA">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </elementImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_voazAE07EeuDP5XTX0eOOA" name="ex4">
+      <packagedElement xmi:type="uml:Package" xmi:id="_vo234E07EeuDP5XTX0eOOA" name="geometry">
+        <packagedElement xmi:type="uml:Class" xmi:id="_vpbfoE07EeuDP5XTX0eOOA" name="Circle2D">
+          <ownedComment xmi:id="_vtuw0E07EeuDP5XTX0eOOA">
+            <body>This class represents a 2D circle in the plane. Please make sure you update it 
+according to the GeoShape interface.
+Ex4: you can update this class!
+@author boaz.benmoshe
+ *</body>
+          </ownedComment>
+          <ownedAttribute xmi:id="_vtb14E07EeuDP5XTX0eOOA" name="_center" visibility="private" type="_vqLtkE07EeuDP5XTX0eOOA" association="_vt5I4U07EeuDP5XTX0eOOA"/>
+          <ownedAttribute xmi:id="_vtcc8U07EeuDP5XTX0eOOA" name="_radius" visibility="private">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedAttribute>
+          <interfaceRealization xmi:id="_vs970E07EeuDP5XTX0eOOA" client="_vpbfoE07EeuDP5XTX0eOOA" supplier="_vqG1EE07EeuDP5XTX0eOOA" contract="_vqG1EE07EeuDP5XTX0eOOA"/>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_vtkYwE07EeuDP5XTX0eOOA" name="Circle2D" specification="_vtBmME07EeuDP5XTX0eOOA">
+            <ownedParameter xmi:id="_vtk_0E07EeuDP5XTX0eOOA" name="cen" type="_vqLtkE07EeuDP5XTX0eOOA"/>
+            <ownedParameter xmi:id="_vtk_0U07EeuDP5XTX0eOOA" name="rad">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_vtk_0k07EeuDP5XTX0eOOA" type="_vpbfoE07EeuDP5XTX0eOOA" direction="return"/>
+            <language>java</language>
+            <body>this._center = new Point2D(cen);
+		this._radius = rad;
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_vtmN8E07EeuDP5XTX0eOOA" name="getRadius" specification="_vpzTEE07EeuDP5XTX0eOOA">
+            <ownedParameter xmi:id="_vtmN8U07EeuDP5XTX0eOOA" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+            </ownedParameter>
+            <language>java</language>
+            <body>return this._radius;</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_vtmN8k07EeuDP5XTX0eOOA" name="toString" specification="_vp2WYE07EeuDP5XTX0eOOA">
+            <ownedParameter xmi:id="_vtmN8007EeuDP5XTX0eOOA" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <language>java</language>
+            <body>return _center.toString()+&quot;, &quot;+_radius;</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_vtmN9E07EeuDP5XTX0eOOA" name="contains" specification="_vtCNRE07EeuDP5XTX0eOOA">
+            <ownedParameter xmi:id="_vtmN9U07EeuDP5XTX0eOOA" name="ot" type="_vqLtkE07EeuDP5XTX0eOOA"/>
+            <ownedParameter xmi:id="_vtmN9k07EeuDP5XTX0eOOA" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+            </ownedParameter>
+            <language>java</language>
+            <body>double dist = ot.distance(this._center);
+		return dist&lt;=this._radius;
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_vtmN9007EeuDP5XTX0eOOA" name="centerOfMass" specification="_vp9rIE07EeuDP5XTX0eOOA">
+            <ownedParameter xmi:id="_vtmN-E07EeuDP5XTX0eOOA" type="_vqLtkE07EeuDP5XTX0eOOA" direction="return"/>
+            <language>java</language>
+            <body>return new Point2D(this._center);
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_vtmN-U07EeuDP5XTX0eOOA" name="area" specification="_vqAucE07EeuDP5XTX0eOOA">
+            <ownedParameter xmi:id="_vtmN-k07EeuDP5XTX0eOOA" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+            </ownedParameter>
+            <language>java</language>
+            <body>double ans = Math.PI * Math.pow(this._radius, 2);
+		return ans;
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_vtmN-007EeuDP5XTX0eOOA" name="perimeter" specification="_vqB8kk07EeuDP5XTX0eOOA">
+            <ownedParameter xmi:id="_vtmN_E07EeuDP5XTX0eOOA" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+            </ownedParameter>
+            <language>java</language>
+            <body>double ans = Math.PI * 2 * this._radius;
+		return ans;
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_vtmN_U07EeuDP5XTX0eOOA" name="move" specification="_vtDbY007EeuDP5XTX0eOOA">
+            <ownedParameter xmi:id="_vtmN_k07EeuDP5XTX0eOOA" name="vec" type="_vqLtkE07EeuDP5XTX0eOOA"/>
+            <language>java</language>
+            <body>_center.move(vec);
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_vtmN_007EeuDP5XTX0eOOA" name="copy" specification="_vqB8l007EeuDP5XTX0eOOA">
+            <ownedParameter xmi:id="_vtmOAE07EeuDP5XTX0eOOA" type="_vqG1EE07EeuDP5XTX0eOOA" direction="return"/>
+            <language>java</language>
+            <body>return new Circle2D(_center, _radius);
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_vtncEE07EeuDP5XTX0eOOA" name="getPoints" specification="_vqDKsk07EeuDP5XTX0eOOA">
+            <ownedParameter xmi:id="_vtncEU07EeuDP5XTX0eOOA" type="_vqLtkE07EeuDP5XTX0eOOA" direction="return">
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vtncEk07EeuDP5XTX0eOOA" value="*"/>
+            </ownedParameter>
+            <language>java</language>
+            <body>Point2D[] ans = new Point2D[2];
+		ans[0] =new Point2D(this._center);
+		ans[1] = new Point2D(ans[0].x(), ans[0].y()+this._radius);
+		return ans;
+	</body>
+          </ownedBehavior>
+          <ownedOperation xmi:id="_vpzTEE07EeuDP5XTX0eOOA" name="getRadius" method="_vtmN8E07EeuDP5XTX0eOOA">
+            <ownedParameter xmi:id="_vp1IQE07EeuDP5XTX0eOOA" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_vp2WYE07EeuDP5XTX0eOOA" name="toString" method="_vtmN8k07EeuDP5XTX0eOOA">
+            <ownedParameter xmi:id="_vp29cE07EeuDP5XTX0eOOA" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_vp9rIE07EeuDP5XTX0eOOA" name="centerOfMass" method="_vtmN9007EeuDP5XTX0eOOA">
+            <ownedParameter xmi:id="_vtDbYk07EeuDP5XTX0eOOA" type="_vqLtkE07EeuDP5XTX0eOOA" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_vqAucE07EeuDP5XTX0eOOA" name="area" method="_vtmN-U07EeuDP5XTX0eOOA">
+            <ownedParameter xmi:id="_vqBVgE07EeuDP5XTX0eOOA" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_vqB8kk07EeuDP5XTX0eOOA" name="perimeter" method="_vtmN-007EeuDP5XTX0eOOA">
+            <ownedParameter xmi:id="_vqB8k007EeuDP5XTX0eOOA" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_vqB8l007EeuDP5XTX0eOOA" name="copy" method="_vtmN_007EeuDP5XTX0eOOA">
+            <ownedParameter xmi:id="_vtECc007EeuDP5XTX0eOOA" type="_vqG1EE07EeuDP5XTX0eOOA" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_vqDKsk07EeuDP5XTX0eOOA" name="getPoints" method="_vtncEE07EeuDP5XTX0eOOA">
+            <ownedParameter xmi:id="_vqDKs007EeuDP5XTX0eOOA" type="_vqLtkE07EeuDP5XTX0eOOA" direction="return">
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vqDKtE07EeuDP5XTX0eOOA" value="*"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_vtBmME07EeuDP5XTX0eOOA" name="Circle2D" method="_vtkYwE07EeuDP5XTX0eOOA">
+            <eAnnotations xmi:id="_vtCNQU07EeuDP5XTX0eOOA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+              <details xmi:id="_vtCNQk07EeuDP5XTX0eOOA" key="create"/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_vtBmMU07EeuDP5XTX0eOOA" name="cen" type="_vqLtkE07EeuDP5XTX0eOOA"/>
+            <ownedParameter xmi:id="_vtCNQE07EeuDP5XTX0eOOA" name="rad">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_vtCNQ007EeuDP5XTX0eOOA" type="_vpbfoE07EeuDP5XTX0eOOA" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_vtCNRE07EeuDP5XTX0eOOA" name="contains" method="_vtmN9E07EeuDP5XTX0eOOA">
+            <ownedParameter xmi:id="_vtCNRU07EeuDP5XTX0eOOA" name="ot" type="_vqLtkE07EeuDP5XTX0eOOA"/>
+            <ownedParameter xmi:id="_vtC0UE07EeuDP5XTX0eOOA" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_vtDbY007EeuDP5XTX0eOOA" name="move" method="_vtmN_U07EeuDP5XTX0eOOA">
+            <ownedParameter xmi:id="_vtDbZE07EeuDP5XTX0eOOA" name="vec" type="_vqLtkE07EeuDP5XTX0eOOA"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Interface" xmi:id="_vqG1EE07EeuDP5XTX0eOOA" name="GeoShape">
+          <ownedComment xmi:id="_vtvX4E07EeuDP5XTX0eOOA">
+            <body>This interface represents a geometric (2D) shape in the plane. The methods includes:
+moving a shape by a vector, testing if a shape contains a point, centerOfMass, area, 
+perimeter, toString and a method (getPoints) for getting the points representing this 
+GeoShape.
+
+Ex4: you should NOT change this interface!
+@author boaz.benmoshe</body>
+          </ownedComment>
+          <ownedAttribute xmi:id="_vqJRUE07EeuDP5XTX0eOOA" name="points" type="_vqLtkE07EeuDP5XTX0eOOA" isReadOnly="true" association="_vt4h0E07EeuDP5XTX0eOOA">
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vqJ4YE07EeuDP5XTX0eOOA" value="*"/>
+          </ownedAttribute>
+          <ownedOperation xmi:id="_vqIDME07EeuDP5XTX0eOOA" name="centerOfMass">
+            <ownedComment xmi:id="_vtvX4k07EeuDP5XTX0eOOA">
+              <body>Computes the center of mass of this shape
+	 * @return a 2D point</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_vtFQk007EeuDP5XTX0eOOA" type="_vqLtkE07EeuDP5XTX0eOOA" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_vqIqQE07EeuDP5XTX0eOOA" name="area">
+            <ownedComment xmi:id="_vtvX4007EeuDP5XTX0eOOA">
+              <body>Computes the area of this shape, in case of a point, and a segment should return 0.
+	 * @return</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_vqIqQU07EeuDP5XTX0eOOA" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_vqIqQk07EeuDP5XTX0eOOA" name="perimeter">
+            <ownedComment xmi:id="_vtvX5E07EeuDP5XTX0eOOA">
+              <body>Computes the perimeter of this shape, return 0 in case of a point and twice the length in the segment in case of a segment. 
+	 * @return</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_vqIqQ007EeuDP5XTX0eOOA" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_vqIqRE07EeuDP5XTX0eOOA" name="copy">
+            <ownedComment xmi:id="_vtvX5k07EeuDP5XTX0eOOA">
+              <body>This method computes a new (deep) copy of this GeoShape 
+	 * @return a deep copy of this GeoShape.</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_vtF3oE07EeuDP5XTX0eOOA" type="_vqG1EE07EeuDP5XTX0eOOA" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_vqIqRU07EeuDP5XTX0eOOA" name="toString">
+            <ownedComment xmi:id="_vtvX5007EeuDP5XTX0eOOA">
+              <body>This method returns a String representing this shape,
+	 * such that one can use this string for saving the shape into a text file.
+	 * @return a String representing this shape</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_vqIqRk07EeuDP5XTX0eOOA" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_vtFQkE07EeuDP5XTX0eOOA" name="contains">
+            <ownedComment xmi:id="_vtvX4U07EeuDP5XTX0eOOA">
+              <body>Computes if the point (ot) falls inside this (closed) shape.
+	 * Note: Assumes a closed shape - aka if ot is on the boundary it is inside the shape.
+	 * 
+	 * @param ot - a query 2D point
+	 * @return true iff the point falls with in this shape (as a closed shape).</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_vtFQkU07EeuDP5XTX0eOOA" name="ot" type="_vqLtkE07EeuDP5XTX0eOOA"/>
+            <ownedParameter xmi:id="_vtFQkk07EeuDP5XTX0eOOA" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_vtFQlE07EeuDP5XTX0eOOA" name="move">
+            <ownedComment xmi:id="_vtvX5U07EeuDP5XTX0eOOA">
+              <body>Move this shape by the vector 0,0-->vec
+	 * Note: this method changes the inner state of the object.
+	 * @param vec - a vector from the 0,0</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_vtFQlU07EeuDP5XTX0eOOA" name="vec" type="_vqLtkE07EeuDP5XTX0eOOA"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_vqLtkE07EeuDP5XTX0eOOA" name="Point2D">
+          <ownedComment xmi:id="_vtvX6E07EeuDP5XTX0eOOA">
+            <body>This class represents a 2D point in the plane.
+Do NOT change this class! It would be used as is for testing.
+Ex4: you should NOT change this class!
+@author boaz.benmoshe</body>
+          </ownedComment>
+          <ownedAttribute xmi:id="_vtdEAE07EeuDP5XTX0eOOA" name="EPS1" isLeaf="true" isStatic="true" isReadOnly="true">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_vtdEAU07EeuDP5XTX0eOOA" value="0.001"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_vtdrEU07EeuDP5XTX0eOOA" name="ORIGIN" isLeaf="true" isStatic="true" type="_vqLtkE07EeuDP5XTX0eOOA" isReadOnly="true" association="_vt5v8E07EeuDP5XTX0eOOA">
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_vtdrEk07EeuDP5XTX0eOOA" value="new Point2D(0,0)"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_vtdrE007EeuDP5XTX0eOOA" name="_x" visibility="private">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_vtvX6U07EeuDP5XTX0eOOA" name="EPS2">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_vtv-8k07EeuDP5XTX0eOOA" value="Math.pow(EPS1,2)"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_vtwmAE07EeuDP5XTX0eOOA" name="EPS">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+            <defaultValue xmi:type="uml:LiteralString" xmi:id="_vtwmA007EeuDP5XTX0eOOA" value="EPS2"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:id="_vtxNEE07EeuDP5XTX0eOOA" name="_y" visibility="private">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+          </ownedAttribute>
+          <interfaceRealization xmi:id="_vtHs0E07EeuDP5XTX0eOOA" client="_vqLtkE07EeuDP5XTX0eOOA" supplier="_vqG1EE07EeuDP5XTX0eOOA" contract="_vqG1EE07EeuDP5XTX0eOOA"/>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_vtoDIE07EeuDP5XTX0eOOA" name="Point2D" specification="_vqM7sE07EeuDP5XTX0eOOA">
+            <ownedParameter xmi:id="_vtoDIU07EeuDP5XTX0eOOA" name="x">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_vtoDIk07EeuDP5XTX0eOOA" name="y">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_vtoDI007EeuDP5XTX0eOOA" type="_vqLtkE07EeuDP5XTX0eOOA" direction="return"/>
+            <language>java</language>
+            <body>_x=x; _y=y;
+ </body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_vtoDJE07EeuDP5XTX0eOOA" name="Point2D" specification="_vtI68E07EeuDP5XTX0eOOA">
+            <ownedParameter xmi:id="_vtoDJU07EeuDP5XTX0eOOA" name="p" type="_vqLtkE07EeuDP5XTX0eOOA"/>
+            <ownedParameter xmi:id="_vtoDJk07EeuDP5XTX0eOOA" type="_vqLtkE07EeuDP5XTX0eOOA" direction="return"/>
+            <language>java</language>
+            <body>this(p.x(), p.y());
+ </body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_vtoDJ007EeuDP5XTX0eOOA" name="Point2D" specification="_vqOw4E07EeuDP5XTX0eOOA">
+            <ownedParameter xmi:id="_vtoDKE07EeuDP5XTX0eOOA" name="s">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_vtoDKU07EeuDP5XTX0eOOA" type="_vqLtkE07EeuDP5XTX0eOOA" direction="return"/>
+            <language>java</language>
+            <body>try {
+         String[] a = s.split(&quot;,&quot;);
+         _x = Double.parseDouble(a[0]);
+         _y = Double.parseDouble(a[1]);
+     }
+     catch(IllegalArgumentException e) {
+         System.err.println(&quot;ERR: got wrong format string for Point2D init, got:&quot;+s+&quot;  should be of format: x,y&quot;);
+         throw(e);
+     }
+ </body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_vtoDKk07EeuDP5XTX0eOOA" name="x" specification="_vqOw5U07EeuDP5XTX0eOOA">
+            <ownedParameter xmi:id="_vtoDK007EeuDP5XTX0eOOA" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+            </ownedParameter>
+            <language>java</language>
+            <body>return _x;</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_vtoDLE07EeuDP5XTX0eOOA" name="y" specification="_vqOw5007EeuDP5XTX0eOOA">
+            <ownedParameter xmi:id="_vtoDLU07EeuDP5XTX0eOOA" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+            </ownedParameter>
+            <language>java</language>
+            <body>return _y;</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_vtoDLk07EeuDP5XTX0eOOA" name="ix" specification="_vqOw6U07EeuDP5XTX0eOOA">
+            <ownedParameter xmi:id="_vtoDL007EeuDP5XTX0eOOA" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <language>java</language>
+            <body>return (int)_x;</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_vtoDME07EeuDP5XTX0eOOA" name="iy" specification="_vqPX8U07EeuDP5XTX0eOOA">
+            <ownedParameter xmi:id="_vtoDMU07EeuDP5XTX0eOOA" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+            <language>java</language>
+            <body>return (int)_y;</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_vtoDMk07EeuDP5XTX0eOOA" name="add" specification="_vtL-QE07EeuDP5XTX0eOOA">
+            <ownedParameter xmi:id="_vtoDM007EeuDP5XTX0eOOA" name="p" type="_vqLtkE07EeuDP5XTX0eOOA"/>
+            <ownedParameter xmi:id="_vtoDNE07EeuDP5XTX0eOOA" type="_vqLtkE07EeuDP5XTX0eOOA" direction="return"/>
+            <language>java</language>
+            <body>Point2D a = new Point2D(p.x()+x(),p.y()+y());
+ 	return a;
+ </body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_vtoDNU07EeuDP5XTX0eOOA" name="toString" specification="_vqPX8007EeuDP5XTX0eOOA">
+            <ownedParameter xmi:id="_vtoDNk07EeuDP5XTX0eOOA" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <language>java</language>
+            <body>return _x+&quot;,&quot;+_y;
+ </body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_vtoDN007EeuDP5XTX0eOOA" name="distance" specification="_vqP_AU07EeuDP5XTX0eOOA">
+            <ownedParameter xmi:id="_vtoDOE07EeuDP5XTX0eOOA" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+            </ownedParameter>
+            <language>java</language>
+            <body>return this.distance(ORIGIN);
+ </body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_vtoDOU07EeuDP5XTX0eOOA" name="distance" specification="_vtL-Q007EeuDP5XTX0eOOA">
+            <ownedParameter xmi:id="_vtoDOk07EeuDP5XTX0eOOA" name="p2" type="_vqLtkE07EeuDP5XTX0eOOA"/>
+            <ownedParameter xmi:id="_vtoDO007EeuDP5XTX0eOOA" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+            </ownedParameter>
+            <language>java</language>
+            <body>double dx = this.x() - p2.x();
+     double dy = this.y() - p2.y();
+     double t = (dx*dx+dy*dy);
+     return Math.sqrt(t);
+ </body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_vtoDPE07EeuDP5XTX0eOOA" name="equals" specification="_vtanwU07EeuDP5XTX0eOOA">
+            <ownedParameter xmi:id="_vtoDPU07EeuDP5XTX0eOOA" name="p" type="_vtaAsk07EeuDP5XTX0eOOA"/>
+            <ownedParameter xmi:id="_vtoDPk07EeuDP5XTX0eOOA" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+            </ownedParameter>
+            <language>java</language>
+            <body>if(p==null || !(p instanceof Point2D)) {return false;}
+     Point2D p2 = (Point2D)p;
+     return ( (_x==p2._x) &amp;&amp; (_y==p2._y));
+ </body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_vtoqME07EeuDP5XTX0eOOA" name="close2equals" specification="_vtMlUE07EeuDP5XTX0eOOA">
+            <ownedParameter xmi:id="_vtoqMU07EeuDP5XTX0eOOA" name="p2" type="_vqLtkE07EeuDP5XTX0eOOA"/>
+            <ownedParameter xmi:id="_vtoqMk07EeuDP5XTX0eOOA" name="eps">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_vtoqM007EeuDP5XTX0eOOA" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+            </ownedParameter>
+            <language>java</language>
+            <body>return ( this.distance(p2) &lt; eps );
+ </body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_vtoqNE07EeuDP5XTX0eOOA" name="close2equals" specification="_vtMlVE07EeuDP5XTX0eOOA">
+            <ownedParameter xmi:id="_vtoqNU07EeuDP5XTX0eOOA" name="p2" type="_vqLtkE07EeuDP5XTX0eOOA"/>
+            <ownedParameter xmi:id="_vtoqNk07EeuDP5XTX0eOOA" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+            </ownedParameter>
+            <language>java</language>
+            <body>return close2equals(p2, EPS);
+ </body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_vtoqN007EeuDP5XTX0eOOA" name="vector" specification="_vtMlV007EeuDP5XTX0eOOA">
+            <ownedParameter xmi:id="_vtoqOE07EeuDP5XTX0eOOA" name="target" type="_vqLtkE07EeuDP5XTX0eOOA"/>
+            <ownedParameter xmi:id="_vtoqOU07EeuDP5XTX0eOOA" type="_vqLtkE07EeuDP5XTX0eOOA" direction="return"/>
+            <language>java</language>
+            <body>double dx = target.x() - this.x();
+ 	double dy = target.y() - this.y();
+ 	return new Point2D(dx,dy);
+ </body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_vtoqOk07EeuDP5XTX0eOOA" name="contains" specification="_vtMlWk07EeuDP5XTX0eOOA">
+            <ownedParameter xmi:id="_vtoqO007EeuDP5XTX0eOOA" name="ot" type="_vqLtkE07EeuDP5XTX0eOOA"/>
+            <ownedParameter xmi:id="_vtoqPE07EeuDP5XTX0eOOA" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+            </ownedParameter>
+            <language>java</language>
+            <body>return this.equals(ot);
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_vtoqPU07EeuDP5XTX0eOOA" name="centerOfMass" specification="_vqQmEE07EeuDP5XTX0eOOA">
+            <ownedParameter xmi:id="_vtoqPk07EeuDP5XTX0eOOA" type="_vqLtkE07EeuDP5XTX0eOOA" direction="return"/>
+            <language>java</language>
+            <body>return new Point2D(this);
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_vtoqP007EeuDP5XTX0eOOA" name="area" specification="_vqWFoE07EeuDP5XTX0eOOA">
+            <ownedParameter xmi:id="_vtoqQE07EeuDP5XTX0eOOA" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+            </ownedParameter>
+            <language>java</language>
+            <body>return 0;
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_vtoqQU07EeuDP5XTX0eOOA" name="perimeter" specification="_vqWstE07EeuDP5XTX0eOOA">
+            <ownedParameter xmi:id="_vtoqQk07EeuDP5XTX0eOOA" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+            </ownedParameter>
+            <language>java</language>
+            <body>return 0;
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_vtpRQE07EeuDP5XTX0eOOA" name="move" specification="_vtNzcU07EeuDP5XTX0eOOA">
+            <ownedParameter xmi:id="_vtpRQU07EeuDP5XTX0eOOA" name="vec" type="_vqLtkE07EeuDP5XTX0eOOA"/>
+            <language>java</language>
+            <body>this._x += vec.x();
+		this._y += vec.y();
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_vtpRQk07EeuDP5XTX0eOOA" name="copy" specification="_vqXTwk07EeuDP5XTX0eOOA">
+            <ownedParameter xmi:id="_vtpRQ007EeuDP5XTX0eOOA" type="_vqG1EE07EeuDP5XTX0eOOA" direction="return"/>
+            <language>java</language>
+            <body>return new Point2D(this);
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_vtpRRE07EeuDP5XTX0eOOA" name="getPoints" specification="_vqXTxk07EeuDP5XTX0eOOA">
+            <ownedParameter xmi:id="_vtpRRU07EeuDP5XTX0eOOA" type="_vqLtkE07EeuDP5XTX0eOOA" direction="return">
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vtpRRk07EeuDP5XTX0eOOA" value="*"/>
+            </ownedParameter>
+            <language>java</language>
+            <body>Point2D[] ans = new Point2D[1];
+		ans[0] =new Point2D(this);
+		return ans;
+	</body>
+          </ownedBehavior>
+          <ownedOperation xmi:id="_vqM7sE07EeuDP5XTX0eOOA" name="Point2D" method="_vtoDIE07EeuDP5XTX0eOOA">
+            <eAnnotations xmi:id="_vqNiwE07EeuDP5XTX0eOOA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+              <details xmi:id="_vqOJ0E07EeuDP5XTX0eOOA" key="create"/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_vqM7sU07EeuDP5XTX0eOOA" name="x">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_vqM7sk07EeuDP5XTX0eOOA" name="y">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_vqOJ0U07EeuDP5XTX0eOOA" type="_vqLtkE07EeuDP5XTX0eOOA" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_vqOw4E07EeuDP5XTX0eOOA" name="Point2D" method="_vtoDJ007EeuDP5XTX0eOOA">
+            <eAnnotations xmi:id="_vqOw4k07EeuDP5XTX0eOOA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+              <details xmi:id="_vqOw4007EeuDP5XTX0eOOA" key="create"/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_vqOw4U07EeuDP5XTX0eOOA" name="s">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_vqOw5E07EeuDP5XTX0eOOA" type="_vqLtkE07EeuDP5XTX0eOOA" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_vqOw5U07EeuDP5XTX0eOOA" name="x" method="_vtoDKk07EeuDP5XTX0eOOA">
+            <ownedParameter xmi:id="_vqOw5k07EeuDP5XTX0eOOA" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_vqOw5007EeuDP5XTX0eOOA" name="y" method="_vtoDLE07EeuDP5XTX0eOOA">
+            <ownedParameter xmi:id="_vqOw6E07EeuDP5XTX0eOOA" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_vqOw6U07EeuDP5XTX0eOOA" name="ix" method="_vtoDLk07EeuDP5XTX0eOOA">
+            <ownedParameter xmi:id="_vqPX8E07EeuDP5XTX0eOOA" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_vqPX8U07EeuDP5XTX0eOOA" name="iy" method="_vtoDME07EeuDP5XTX0eOOA">
+            <ownedParameter xmi:id="_vqPX8k07EeuDP5XTX0eOOA" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_vqPX8007EeuDP5XTX0eOOA" name="toString" method="_vtoDNU07EeuDP5XTX0eOOA">
+            <ownedParameter xmi:id="_vqPX9E07EeuDP5XTX0eOOA" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_vqP_AU07EeuDP5XTX0eOOA" name="distance" method="_vtoDN007EeuDP5XTX0eOOA">
+            <ownedParameter xmi:id="_vqP_Ak07EeuDP5XTX0eOOA" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_vqQmEE07EeuDP5XTX0eOOA" name="centerOfMass" method="_vtoqPU07EeuDP5XTX0eOOA">
+            <ownedParameter xmi:id="_vtNzcE07EeuDP5XTX0eOOA" type="_vqLtkE07EeuDP5XTX0eOOA" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_vqWFoE07EeuDP5XTX0eOOA" name="area" method="_vtoqP007EeuDP5XTX0eOOA">
+            <ownedParameter xmi:id="_vqWssE07EeuDP5XTX0eOOA" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_vqWstE07EeuDP5XTX0eOOA" name="perimeter" method="_vtoqQU07EeuDP5XTX0eOOA">
+            <ownedParameter xmi:id="_vqWstU07EeuDP5XTX0eOOA" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_vqXTwk07EeuDP5XTX0eOOA" name="copy" method="_vtpRQk07EeuDP5XTX0eOOA">
+            <ownedParameter xmi:id="_vtNzdk07EeuDP5XTX0eOOA" type="_vqG1EE07EeuDP5XTX0eOOA" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_vqXTxk07EeuDP5XTX0eOOA" name="getPoints" method="_vtpRRE07EeuDP5XTX0eOOA">
+            <ownedParameter xmi:id="_vqX60E07EeuDP5XTX0eOOA" type="_vqLtkE07EeuDP5XTX0eOOA" direction="return">
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vqX60U07EeuDP5XTX0eOOA" value="*"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_vtI68E07EeuDP5XTX0eOOA" name="Point2D" method="_vtoDJE07EeuDP5XTX0eOOA">
+            <eAnnotations xmi:id="_vtKJEE07EeuDP5XTX0eOOA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+              <details xmi:id="_vtKJEU07EeuDP5XTX0eOOA" key="create"/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_vtI68U07EeuDP5XTX0eOOA" name="p" type="_vqLtkE07EeuDP5XTX0eOOA"/>
+            <ownedParameter xmi:id="_vtKJEk07EeuDP5XTX0eOOA" type="_vqLtkE07EeuDP5XTX0eOOA" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_vtL-QE07EeuDP5XTX0eOOA" name="add" method="_vtoDMk07EeuDP5XTX0eOOA">
+            <ownedParameter xmi:id="_vtL-QU07EeuDP5XTX0eOOA" name="p" type="_vqLtkE07EeuDP5XTX0eOOA"/>
+            <ownedParameter xmi:id="_vtL-Qk07EeuDP5XTX0eOOA" type="_vqLtkE07EeuDP5XTX0eOOA" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_vtL-Q007EeuDP5XTX0eOOA" name="distance" method="_vtoDOU07EeuDP5XTX0eOOA">
+            <ownedParameter xmi:id="_vtL-RE07EeuDP5XTX0eOOA" name="p2" type="_vqLtkE07EeuDP5XTX0eOOA"/>
+            <ownedParameter xmi:id="_vtL-RU07EeuDP5XTX0eOOA" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_vtMlUE07EeuDP5XTX0eOOA" name="close2equals" method="_vtoqME07EeuDP5XTX0eOOA">
+            <ownedParameter xmi:id="_vtMlUU07EeuDP5XTX0eOOA" name="p2" type="_vqLtkE07EeuDP5XTX0eOOA"/>
+            <ownedParameter xmi:id="_vtMlUk07EeuDP5XTX0eOOA" name="eps">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+            </ownedParameter>
+            <ownedParameter xmi:id="_vtMlU007EeuDP5XTX0eOOA" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_vtMlVE07EeuDP5XTX0eOOA" name="close2equals" method="_vtoqNE07EeuDP5XTX0eOOA">
+            <ownedParameter xmi:id="_vtMlVU07EeuDP5XTX0eOOA" name="p2" type="_vqLtkE07EeuDP5XTX0eOOA"/>
+            <ownedParameter xmi:id="_vtMlVk07EeuDP5XTX0eOOA" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_vtMlV007EeuDP5XTX0eOOA" name="vector" method="_vtoqN007EeuDP5XTX0eOOA">
+            <ownedComment xmi:id="_vtxNE007EeuDP5XTX0eOOA">
+              <body>This method returns the vector between this point and the target point. The vector is represented as a Point2D.
+     * @param target
+     * @return</body>
+            </ownedComment>
+            <ownedParameter xmi:id="_vtMlWE07EeuDP5XTX0eOOA" name="target" type="_vqLtkE07EeuDP5XTX0eOOA"/>
+            <ownedParameter xmi:id="_vtMlWU07EeuDP5XTX0eOOA" type="_vqLtkE07EeuDP5XTX0eOOA" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_vtMlWk07EeuDP5XTX0eOOA" name="contains" method="_vtoqOk07EeuDP5XTX0eOOA">
+            <ownedParameter xmi:id="_vtNMYE07EeuDP5XTX0eOOA" name="ot" type="_vqLtkE07EeuDP5XTX0eOOA"/>
+            <ownedParameter xmi:id="_vtNMYU07EeuDP5XTX0eOOA" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_vtNzcU07EeuDP5XTX0eOOA" name="move" method="_vtpRQE07EeuDP5XTX0eOOA">
+            <ownedParameter xmi:id="_vtNzck07EeuDP5XTX0eOOA" name="vec" type="_vqLtkE07EeuDP5XTX0eOOA"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_vtanwU07EeuDP5XTX0eOOA" name="equals" method="_vtoDPE07EeuDP5XTX0eOOA">
+            <ownedParameter xmi:id="_vtanwk07EeuDP5XTX0eOOA" name="p" type="_vtaAsk07EeuDP5XTX0eOOA"/>
+            <ownedParameter xmi:id="_vtanw007EeuDP5XTX0eOOA" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+            </ownedParameter>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_vqa-IE07EeuDP5XTX0eOOA" name="Rect2D">
+          <ownedComment xmi:id="_vtx0IE07EeuDP5XTX0eOOA">
+            <body>This class represents a 2D axis parallel rectangle.
+Ex4: you should implement this class!
+@author I2CS
+ *</body>
+          </ownedComment>
+          <ownedAttribute xmi:id="_vte5ME07EeuDP5XTX0eOOA" name="_min" visibility="private" type="_vqLtkE07EeuDP5XTX0eOOA" association="_vt5v8007EeuDP5XTX0eOOA"/>
+          <ownedAttribute xmi:id="_vtx0IU07EeuDP5XTX0eOOA" name="_max" visibility="private" type="_vqLtkE07EeuDP5XTX0eOOA" association="_vt6XA007EeuDP5XTX0eOOA"/>
+          <interfaceRealization xmi:id="_vtQPsE07EeuDP5XTX0eOOA" client="_vqa-IE07EeuDP5XTX0eOOA" supplier="_vqG1EE07EeuDP5XTX0eOOA" contract="_vqG1EE07EeuDP5XTX0eOOA"/>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_vtp4UE07EeuDP5XTX0eOOA" name="Rect2D" specification="_vtRd0E07EeuDP5XTX0eOOA">
+            <ownedParameter xmi:id="_vtp4UU07EeuDP5XTX0eOOA" name="p1" type="_vqLtkE07EeuDP5XTX0eOOA"/>
+            <ownedParameter xmi:id="_vtp4Uk07EeuDP5XTX0eOOA" name="p2" type="_vqLtkE07EeuDP5XTX0eOOA"/>
+            <ownedParameter xmi:id="_vtp4U007EeuDP5XTX0eOOA" type="_vqa-IE07EeuDP5XTX0eOOA" direction="return"/>
+            <language>java</language>
+            <body>double x0 = Math.min(p1.x(), p2.x());
+		double y0 = Math.min(p1.y(), p2.y());
+		double x1 = Math.max(p1.x(), p2.x());
+		double y1 = Math.max(p1.y(), p2.y());
+		_min = new Point2D(x0,y0);
+		_max = new Point2D(x1,y1);
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_vtp4VE07EeuDP5XTX0eOOA" name="width" specification="_vqblME07EeuDP5XTX0eOOA">
+            <ownedParameter xmi:id="_vtp4VU07EeuDP5XTX0eOOA" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+            </ownedParameter>
+            <language>java</language>
+            <body>return _max.x()-_min.x();</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_vtp4Vk07EeuDP5XTX0eOOA" name="height" specification="_vqblMk07EeuDP5XTX0eOOA">
+            <ownedParameter xmi:id="_vtp4V007EeuDP5XTX0eOOA" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+            </ownedParameter>
+            <language>java</language>
+            <body>return _max.y()-_min.y();</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_vtp4WE07EeuDP5XTX0eOOA" name="contains" specification="_vtRd1k07EeuDP5XTX0eOOA">
+            <ownedParameter xmi:id="_vtp4WU07EeuDP5XTX0eOOA" name="ot" type="_vqLtkE07EeuDP5XTX0eOOA"/>
+            <ownedParameter xmi:id="_vtp4Wk07EeuDP5XTX0eOOA" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+            </ownedParameter>
+            <language>java</language>
+            <body>boolean ans = false;
+		if(ot!=null) {
+			if(ot.x()>=_min.x() &amp;&amp; ot.y()>=_min.y() &amp;&amp;
+				ot.x()&lt;=_max.x() &amp;&amp; ot.y()&lt;=_max.y()) {
+				ans = true;
+			}
+		}
+		return ans;
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_vtp4W007EeuDP5XTX0eOOA" name="centerOfMass" specification="_vqcMQE07EeuDP5XTX0eOOA">
+            <ownedParameter xmi:id="_vtp4XE07EeuDP5XTX0eOOA" type="_vqLtkE07EeuDP5XTX0eOOA" direction="return"/>
+            <language>java</language>
+            <body>double x = (_min.x()+_max.x())/2;
+		double y = (_min.y()+_max.y())/2;
+		return new Point2D(x,y);
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_vtqfYE07EeuDP5XTX0eOOA" name="area" specification="_vqcMRE07EeuDP5XTX0eOOA">
+            <ownedParameter xmi:id="_vtqfYU07EeuDP5XTX0eOOA" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+            </ownedParameter>
+            <language>java</language>
+            <body>double ans = width() * height();
+		return ans;
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_vtqfYk07EeuDP5XTX0eOOA" name="perimeter" specification="_vqczVE07EeuDP5XTX0eOOA">
+            <ownedParameter xmi:id="_vtqfY007EeuDP5XTX0eOOA" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+            </ownedParameter>
+            <language>java</language>
+            <body>double ans = width() + height();
+		return ans*2;
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_vtqfZE07EeuDP5XTX0eOOA" name="move" specification="_vtSr8007EeuDP5XTX0eOOA">
+            <ownedParameter xmi:id="_vtqfZU07EeuDP5XTX0eOOA" name="vec" type="_vqLtkE07EeuDP5XTX0eOOA"/>
+            <language>java</language>
+            <body>_min.move(vec);
+		_max.move(vec);
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_vtqfZk07EeuDP5XTX0eOOA" name="copy" specification="_vqczWU07EeuDP5XTX0eOOA">
+            <ownedParameter xmi:id="_vtqfZ007EeuDP5XTX0eOOA" type="_vqG1EE07EeuDP5XTX0eOOA" direction="return"/>
+            <language>java</language>
+            <body>return new Rect2D(_min,_max);
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_vtqfaE07EeuDP5XTX0eOOA" name="getPoints" specification="_vqdaYk07EeuDP5XTX0eOOA">
+            <ownedParameter xmi:id="_vtqfaU07EeuDP5XTX0eOOA" type="_vqLtkE07EeuDP5XTX0eOOA" direction="return">
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vtqfak07EeuDP5XTX0eOOA" value="*"/>
+            </ownedParameter>
+            <language>java</language>
+            <body>Point2D[] ans = {new Point2D(_min), new Point2D(_max)};
+		return ans;
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_vtqfa007EeuDP5XTX0eOOA" name="toString" specification="_vqdaaU07EeuDP5XTX0eOOA">
+            <ownedParameter xmi:id="_vtqfbE07EeuDP5XTX0eOOA" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <language>java</language>
+            <body>String ans = _min+&quot;,&quot;+_max;
+		return ans;
+	</body>
+          </ownedBehavior>
+          <ownedOperation xmi:id="_vqblME07EeuDP5XTX0eOOA" name="width" method="_vtp4VE07EeuDP5XTX0eOOA">
+            <ownedParameter xmi:id="_vqblMU07EeuDP5XTX0eOOA" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_vqblMk07EeuDP5XTX0eOOA" name="height" method="_vtp4Vk07EeuDP5XTX0eOOA">
+            <ownedParameter xmi:id="_vqblM007EeuDP5XTX0eOOA" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_vqcMQE07EeuDP5XTX0eOOA" name="centerOfMass" method="_vtp4W007EeuDP5XTX0eOOA">
+            <ownedParameter xmi:id="_vtSr8k07EeuDP5XTX0eOOA" type="_vqLtkE07EeuDP5XTX0eOOA" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_vqcMRE07EeuDP5XTX0eOOA" name="area" method="_vtqfYE07EeuDP5XTX0eOOA">
+            <ownedParameter xmi:id="_vqczUE07EeuDP5XTX0eOOA" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_vqczVE07EeuDP5XTX0eOOA" name="perimeter" method="_vtqfYk07EeuDP5XTX0eOOA">
+            <ownedParameter xmi:id="_vqczVU07EeuDP5XTX0eOOA" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_vqczWU07EeuDP5XTX0eOOA" name="copy" method="_vtqfZk07EeuDP5XTX0eOOA">
+            <ownedParameter xmi:id="_vtTTAE07EeuDP5XTX0eOOA" type="_vqG1EE07EeuDP5XTX0eOOA" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_vqdaYk07EeuDP5XTX0eOOA" name="getPoints" method="_vtqfaE07EeuDP5XTX0eOOA">
+            <ownedParameter xmi:id="_vqdaY007EeuDP5XTX0eOOA" type="_vqLtkE07EeuDP5XTX0eOOA" direction="return">
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vqdaZE07EeuDP5XTX0eOOA" value="*"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_vqdaaU07EeuDP5XTX0eOOA" name="toString" method="_vtqfa007EeuDP5XTX0eOOA">
+            <ownedParameter xmi:id="_vqdaak07EeuDP5XTX0eOOA" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_vtRd0E07EeuDP5XTX0eOOA" name="Rect2D" method="_vtp4UE07EeuDP5XTX0eOOA">
+            <eAnnotations xmi:id="_vtRd0007EeuDP5XTX0eOOA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+              <details xmi:id="_vtRd1E07EeuDP5XTX0eOOA" key="create"/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_vtRd0U07EeuDP5XTX0eOOA" name="p1" type="_vqLtkE07EeuDP5XTX0eOOA"/>
+            <ownedParameter xmi:id="_vtRd0k07EeuDP5XTX0eOOA" name="p2" type="_vqLtkE07EeuDP5XTX0eOOA"/>
+            <ownedParameter xmi:id="_vtRd1U07EeuDP5XTX0eOOA" type="_vqa-IE07EeuDP5XTX0eOOA" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_vtRd1k07EeuDP5XTX0eOOA" name="contains" method="_vtp4WE07EeuDP5XTX0eOOA">
+            <ownedParameter xmi:id="_vtRd1007EeuDP5XTX0eOOA" name="ot" type="_vqLtkE07EeuDP5XTX0eOOA"/>
+            <ownedParameter xmi:id="_vtRd2E07EeuDP5XTX0eOOA" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_vtSr8007EeuDP5XTX0eOOA" name="move" method="_vtqfZE07EeuDP5XTX0eOOA">
+            <ownedParameter xmi:id="_vtSr9E07EeuDP5XTX0eOOA" name="vec" type="_vqLtkE07EeuDP5XTX0eOOA"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_vqhEwE07EeuDP5XTX0eOOA" name="Segment2D">
+          <ownedComment xmi:id="_vtx0JE07EeuDP5XTX0eOOA">
+            <body>This class represents a 2D segment on the plane, 
+Ex4: you should implement this class!
+@author I2CS
+ *</body>
+          </ownedComment>
+          <ownedAttribute xmi:id="_vte5M007EeuDP5XTX0eOOA" name="_p1" visibility="private" type="_vqLtkE07EeuDP5XTX0eOOA" association="_vt5v9k07EeuDP5XTX0eOOA"/>
+          <ownedAttribute xmi:id="_vtybME07EeuDP5XTX0eOOA" name="_p2" visibility="private" type="_vqLtkE07EeuDP5XTX0eOOA" association="_vt6XBk07EeuDP5XTX0eOOA"/>
+          <interfaceRealization xmi:id="_vtUhIU07EeuDP5XTX0eOOA" client="_vqhEwE07EeuDP5XTX0eOOA" supplier="_vqG1EE07EeuDP5XTX0eOOA" contract="_vqG1EE07EeuDP5XTX0eOOA"/>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_vtrGcE07EeuDP5XTX0eOOA" name="Segment2D" specification="_vtVIME07EeuDP5XTX0eOOA">
+            <ownedParameter xmi:id="_vtrGcU07EeuDP5XTX0eOOA" name="a" type="_vqLtkE07EeuDP5XTX0eOOA"/>
+            <ownedParameter xmi:id="_vtrGck07EeuDP5XTX0eOOA" name="b" type="_vqLtkE07EeuDP5XTX0eOOA"/>
+            <ownedParameter xmi:id="_vtrGc007EeuDP5XTX0eOOA" type="_vqhEwE07EeuDP5XTX0eOOA" direction="return"/>
+            <language>java</language>
+            <body>_p1=new Point2D(a);
+		_p2=new Point2D(b);
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_vtrtgE07EeuDP5XTX0eOOA" name="contains" specification="_vtVINk07EeuDP5XTX0eOOA">
+            <ownedParameter xmi:id="_vtrtgU07EeuDP5XTX0eOOA" name="ot" type="_vqLtkE07EeuDP5XTX0eOOA"/>
+            <ownedParameter xmi:id="_vtrtgk07EeuDP5XTX0eOOA" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+            </ownedParameter>
+            <language>java</language>
+            <body>boolean ans = false;
+		double d12 = _p1.distance(_p2);
+		double dd = _p1.distance(ot)+ot.distance(_p2);
+		ans = d12+Ex4_Const.EPS>= dd;
+		return ans;
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_vtrtg007EeuDP5XTX0eOOA" name="centerOfMass" specification="_vqhEwU07EeuDP5XTX0eOOA">
+            <ownedParameter xmi:id="_vtrthE07EeuDP5XTX0eOOA" type="_vqLtkE07EeuDP5XTX0eOOA" direction="return"/>
+            <language>java</language>
+            <body>double x=0,y=0;
+		x += _p1.x() + _p2.x();
+		y += _p1.y() + _p2.y();
+	
+		return new Point2D(x/2,y/2);
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_vtrthU07EeuDP5XTX0eOOA" name="area" specification="_vqhr0007EeuDP5XTX0eOOA">
+            <ownedParameter xmi:id="_vtrthk07EeuDP5XTX0eOOA" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+            </ownedParameter>
+            <language>java</language>
+            <body>return 0;
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_vtrth007EeuDP5XTX0eOOA" name="perimeter" specification="_vqi58k07EeuDP5XTX0eOOA">
+            <ownedParameter xmi:id="_vtrtiE07EeuDP5XTX0eOOA" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+            </ownedParameter>
+            <language>java</language>
+            <body>double ans = _p1.distance(_p2);
+		return ans*2;
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_vtsUkE07EeuDP5XTX0eOOA" name="move" specification="_vtWWUE07EeuDP5XTX0eOOA">
+            <ownedParameter xmi:id="_vtsUkU07EeuDP5XTX0eOOA" name="vec" type="_vqLtkE07EeuDP5XTX0eOOA"/>
+            <language>java</language>
+            <body>_p1.move(vec);
+		_p2.move(vec);
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_vtsUkk07EeuDP5XTX0eOOA" name="copy" specification="_vqi59007EeuDP5XTX0eOOA">
+            <ownedParameter xmi:id="_vtsUk007EeuDP5XTX0eOOA" type="_vqG1EE07EeuDP5XTX0eOOA" direction="return"/>
+            <language>java</language>
+            <body>return new Segment2D(_p1,_p2);
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_vtsUlE07EeuDP5XTX0eOOA" name="getPoints" specification="_vqjhAE07EeuDP5XTX0eOOA">
+            <ownedParameter xmi:id="_vtsUlU07EeuDP5XTX0eOOA" type="_vqLtkE07EeuDP5XTX0eOOA" direction="return">
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vtsUlk07EeuDP5XTX0eOOA" value="*"/>
+            </ownedParameter>
+            <language>java</language>
+            <body>Point2D[] ans = {new Point2D(_p1), new Point2D(_p2)};
+		return ans;
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_vtsUl007EeuDP5XTX0eOOA" name="toString" specification="_vqjhB007EeuDP5XTX0eOOA">
+            <ownedParameter xmi:id="_vtsUmE07EeuDP5XTX0eOOA" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <language>java</language>
+            <body>String ans = _p1+&quot;,&quot;+_p2;//
+		return ans;
+	</body>
+          </ownedBehavior>
+          <ownedOperation xmi:id="_vqhEwU07EeuDP5XTX0eOOA" name="centerOfMass" method="_vtrtg007EeuDP5XTX0eOOA">
+            <ownedParameter xmi:id="_vtVvRE07EeuDP5XTX0eOOA" type="_vqLtkE07EeuDP5XTX0eOOA" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_vqhr0007EeuDP5XTX0eOOA" name="area" method="_vtrthU07EeuDP5XTX0eOOA">
+            <ownedParameter xmi:id="_vqiS4E07EeuDP5XTX0eOOA" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_vqi58k07EeuDP5XTX0eOOA" name="perimeter" method="_vtrth007EeuDP5XTX0eOOA">
+            <ownedParameter xmi:id="_vqi58007EeuDP5XTX0eOOA" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_vqi59007EeuDP5XTX0eOOA" name="copy" method="_vtsUkk07EeuDP5XTX0eOOA">
+            <ownedParameter xmi:id="_vtWWVU07EeuDP5XTX0eOOA" type="_vqG1EE07EeuDP5XTX0eOOA" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_vqjhAE07EeuDP5XTX0eOOA" name="getPoints" method="_vtsUlE07EeuDP5XTX0eOOA">
+            <ownedParameter xmi:id="_vqjhAU07EeuDP5XTX0eOOA" type="_vqLtkE07EeuDP5XTX0eOOA" direction="return">
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vqjhAk07EeuDP5XTX0eOOA" value="*"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_vqjhB007EeuDP5XTX0eOOA" name="toString" method="_vtsUl007EeuDP5XTX0eOOA">
+            <ownedParameter xmi:id="_vqjhCE07EeuDP5XTX0eOOA" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_vtVIME07EeuDP5XTX0eOOA" name="Segment2D" method="_vtrGcE07EeuDP5XTX0eOOA">
+            <eAnnotations xmi:id="_vtVIM007EeuDP5XTX0eOOA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+              <details xmi:id="_vtVINE07EeuDP5XTX0eOOA" key="create"/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_vtVIMU07EeuDP5XTX0eOOA" name="a" type="_vqLtkE07EeuDP5XTX0eOOA"/>
+            <ownedParameter xmi:id="_vtVIMk07EeuDP5XTX0eOOA" name="b" type="_vqLtkE07EeuDP5XTX0eOOA"/>
+            <ownedParameter xmi:id="_vtVINU07EeuDP5XTX0eOOA" type="_vqhEwE07EeuDP5XTX0eOOA" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_vtVINk07EeuDP5XTX0eOOA" name="contains" method="_vtrtgE07EeuDP5XTX0eOOA">
+            <ownedParameter xmi:id="_vtVIN007EeuDP5XTX0eOOA" name="ot" type="_vqLtkE07EeuDP5XTX0eOOA"/>
+            <ownedParameter xmi:id="_vtVvQE07EeuDP5XTX0eOOA" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_vtWWUE07EeuDP5XTX0eOOA" name="move" method="_vtsUkE07EeuDP5XTX0eOOA">
+            <ownedParameter xmi:id="_vtWWUU07EeuDP5XTX0eOOA" name="vec" type="_vqLtkE07EeuDP5XTX0eOOA"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_vqkvIE07EeuDP5XTX0eOOA" name="Triangle2D">
+          <ownedComment xmi:id="_vtybM007EeuDP5XTX0eOOA">
+            <body>This class represents a 2D Triangle in the plane.
+Ex4: you should implement this class!
+@author I2CS
+ *</body>
+          </ownedComment>
+          <ownedAttribute xmi:id="_vtfgQk07EeuDP5XTX0eOOA" name="_ps" visibility="private" type="_vqLtkE07EeuDP5XTX0eOOA" association="_vt6XAE07EeuDP5XTX0eOOA">
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vtfgQ007EeuDP5XTX0eOOA" value="*"/>
+          </ownedAttribute>
+          <interfaceRealization xmi:id="_vtW9YE07EeuDP5XTX0eOOA" client="_vqkvIE07EeuDP5XTX0eOOA" supplier="_vqG1EE07EeuDP5XTX0eOOA" contract="_vqG1EE07EeuDP5XTX0eOOA"/>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_vttisE07EeuDP5XTX0eOOA" name="Triangle2D" specification="_vtW9YU07EeuDP5XTX0eOOA">
+            <ownedParameter xmi:id="_vttisU07EeuDP5XTX0eOOA" name="p1" type="_vqLtkE07EeuDP5XTX0eOOA"/>
+            <ownedParameter xmi:id="_vttisk07EeuDP5XTX0eOOA" name="p2" type="_vqLtkE07EeuDP5XTX0eOOA"/>
+            <ownedParameter xmi:id="_vttis007EeuDP5XTX0eOOA" name="p3" type="_vqLtkE07EeuDP5XTX0eOOA"/>
+            <ownedParameter xmi:id="_vttitE07EeuDP5XTX0eOOA" type="_vqkvIE07EeuDP5XTX0eOOA" direction="return"/>
+            <language>java</language>
+            <body>_ps = new Point2D[3];
+		_ps[0]=new Point2D(p1);
+		_ps[1]=new Point2D(p2);
+		_ps[2]=new Point2D(p3);
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_vttitU07EeuDP5XTX0eOOA" name="contains" specification="_vtW9aE07EeuDP5XTX0eOOA">
+            <ownedParameter xmi:id="_vttitk07EeuDP5XTX0eOOA" name="ot" type="_vqLtkE07EeuDP5XTX0eOOA"/>
+            <ownedParameter xmi:id="_vttit007EeuDP5XTX0eOOA" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+            </ownedParameter>
+            <language>java</language>
+            <body>boolean ans = false;
+		double area = this.area(), a1=0;
+		for(int i=0;i&lt;_ps.length;i=i+1) {
+			int i1 = (i+1)%3;
+			Triangle2D t = new Triangle2D(_ps[i], _ps[i1], ot);
+			a1+=t.area();
+		}
+		double da = a1-area;
+		ans = da&lt;Point2D.EPS; // ZZZZ should be a Constant class;
+		return ans;
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_vttiuE07EeuDP5XTX0eOOA" name="centerOfMass" specification="_vqlWME07EeuDP5XTX0eOOA">
+            <ownedParameter xmi:id="_vttiuU07EeuDP5XTX0eOOA" type="_vqLtkE07EeuDP5XTX0eOOA" direction="return"/>
+            <language>java</language>
+            <body>Point2D ans = null;
+		double x=0,y=0;
+		for(int i=0;i&lt;_ps.length;i=i+1) {
+			x += _ps[i].x();
+			y += _ps[i].y();
+		}
+		ans = new Point2D(x/3,y/3);
+		return ans;
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_vttiuk07EeuDP5XTX0eOOA" name="area" specification="_vqmkUk07EeuDP5XTX0eOOA">
+            <ownedParameter xmi:id="_vttiu007EeuDP5XTX0eOOA" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+            </ownedParameter>
+            <language>java</language>
+            <body>double d = this.perimeter()/2;
+		double ans = 1;
+		for(int i=0;i&lt;_ps.length;i=i+1) {
+			int i1 = (i+1)%3;
+			double abc = _ps[i].distance(_ps[i1]);
+			ans *= (d-abc);
+		}
+		return Math.sqrt(ans);
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_vttivE07EeuDP5XTX0eOOA" name="perimeter" specification="_vqmkV007EeuDP5XTX0eOOA">
+            <ownedParameter xmi:id="_vttivU07EeuDP5XTX0eOOA" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+            </ownedParameter>
+            <language>java</language>
+            <body>double ans = 0;
+		for(int i=0;i&lt;_ps.length;i=i+1) {
+			int i1 = (i+1)%3;
+			double d = _ps[i].distance(_ps[i1]);
+			ans += d;
+		}
+		return ans;
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_vttivk07EeuDP5XTX0eOOA" name="move" specification="_vtXkdU07EeuDP5XTX0eOOA">
+            <ownedParameter xmi:id="_vttiv007EeuDP5XTX0eOOA" name="vec" type="_vqLtkE07EeuDP5XTX0eOOA"/>
+            <language>java</language>
+            <body>for(int i=0;i&lt;_ps.length;i=i+1) {
+			_ps[i].move(vec);
+		}
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_vttiwE07EeuDP5XTX0eOOA" name="copy" specification="_vqnLY007EeuDP5XTX0eOOA">
+            <ownedParameter xmi:id="_vttiwU07EeuDP5XTX0eOOA" type="_vqG1EE07EeuDP5XTX0eOOA" direction="return"/>
+            <language>java</language>
+            <body>return new Triangle2D(_ps[0], _ps[1], _ps[2]);
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_vttiwk07EeuDP5XTX0eOOA" name="getPoints" specification="_vqnLZ007EeuDP5XTX0eOOA">
+            <ownedParameter xmi:id="_vttiw007EeuDP5XTX0eOOA" type="_vqLtkE07EeuDP5XTX0eOOA" direction="return">
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vttixE07EeuDP5XTX0eOOA" value="*"/>
+            </ownedParameter>
+            <language>java</language>
+            <body>Point2D[] ans = new Point2D[3];
+		for(int i=0;i&lt;_ps.length;i=i+1) {
+			ans[i] = new Point2D(_ps[i]);
+		}
+		return ans;
+	</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_vttixU07EeuDP5XTX0eOOA" name="toString" specification="_vqnyck07EeuDP5XTX0eOOA">
+            <ownedParameter xmi:id="_vttixk07EeuDP5XTX0eOOA" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+            <language>java</language>
+            <body>String ans = &quot;&quot;;//
+		for(int i=0;i&lt;_ps.length;i=i+1) {
+			ans += _ps[i];
+			if(i&lt;2) {ans+=&quot;,&quot;;}
+		}
+		return ans;
+	</body>
+          </ownedBehavior>
+          <ownedOperation xmi:id="_vqlWME07EeuDP5XTX0eOOA" name="centerOfMass" method="_vttiuE07EeuDP5XTX0eOOA">
+            <ownedParameter xmi:id="_vtXkdE07EeuDP5XTX0eOOA" type="_vqLtkE07EeuDP5XTX0eOOA" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_vqmkUk07EeuDP5XTX0eOOA" name="area" method="_vttiuk07EeuDP5XTX0eOOA">
+            <ownedParameter xmi:id="_vqmkU007EeuDP5XTX0eOOA" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_vqmkV007EeuDP5XTX0eOOA" name="perimeter" method="_vttivE07EeuDP5XTX0eOOA">
+            <ownedParameter xmi:id="_vqmkWE07EeuDP5XTX0eOOA" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_vqnLY007EeuDP5XTX0eOOA" name="copy" method="_vttiwE07EeuDP5XTX0eOOA">
+            <ownedParameter xmi:id="_vtYLgk07EeuDP5XTX0eOOA" type="_vqG1EE07EeuDP5XTX0eOOA" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_vqnLZ007EeuDP5XTX0eOOA" name="getPoints" method="_vttiwk07EeuDP5XTX0eOOA">
+            <ownedParameter xmi:id="_vqnLaE07EeuDP5XTX0eOOA" type="_vqLtkE07EeuDP5XTX0eOOA" direction="return">
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vqnLaU07EeuDP5XTX0eOOA" value="*"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_vqnyck07EeuDP5XTX0eOOA" name="toString" method="_vttixU07EeuDP5XTX0eOOA">
+            <ownedParameter xmi:id="_vqnyc007EeuDP5XTX0eOOA" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_vtW9YU07EeuDP5XTX0eOOA" name="Triangle2D" method="_vttisE07EeuDP5XTX0eOOA">
+            <eAnnotations xmi:id="_vtW9ZU07EeuDP5XTX0eOOA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+              <details xmi:id="_vtW9Zk07EeuDP5XTX0eOOA" key="create"/>
+            </eAnnotations>
+            <ownedParameter xmi:id="_vtW9Yk07EeuDP5XTX0eOOA" name="p1" type="_vqLtkE07EeuDP5XTX0eOOA"/>
+            <ownedParameter xmi:id="_vtW9Y007EeuDP5XTX0eOOA" name="p2" type="_vqLtkE07EeuDP5XTX0eOOA"/>
+            <ownedParameter xmi:id="_vtW9ZE07EeuDP5XTX0eOOA" name="p3" type="_vqLtkE07EeuDP5XTX0eOOA"/>
+            <ownedParameter xmi:id="_vtW9Z007EeuDP5XTX0eOOA" type="_vqkvIE07EeuDP5XTX0eOOA" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:id="_vtW9aE07EeuDP5XTX0eOOA" name="contains" method="_vttitU07EeuDP5XTX0eOOA">
+            <ownedParameter xmi:id="_vtW9aU07EeuDP5XTX0eOOA" name="ot" type="_vqLtkE07EeuDP5XTX0eOOA"/>
+            <ownedParameter xmi:id="_vtXkcE07EeuDP5XTX0eOOA" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:id="_vtXkdU07EeuDP5XTX0eOOA" name="move" method="_vttivk07EeuDP5XTX0eOOA">
+            <ownedParameter xmi:id="_vtXkdk07EeuDP5XTX0eOOA" name="vec" type="_vqLtkE07EeuDP5XTX0eOOA"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_vt4h0E07EeuDP5XTX0eOOA" name="" memberEnd="_vt4h0U07EeuDP5XTX0eOOA _vqJRUE07EeuDP5XTX0eOOA">
+          <ownedEnd xmi:id="_vt4h0U07EeuDP5XTX0eOOA" name="" type="_vqG1EE07EeuDP5XTX0eOOA" association="_vt4h0E07EeuDP5XTX0eOOA"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_vt5I4U07EeuDP5XTX0eOOA" name="" memberEnd="_vt5I4k07EeuDP5XTX0eOOA _vtb14E07EeuDP5XTX0eOOA">
+          <ownedEnd xmi:id="_vt5I4k07EeuDP5XTX0eOOA" name="" type="_vpbfoE07EeuDP5XTX0eOOA" association="_vt5I4U07EeuDP5XTX0eOOA"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_vt5v8E07EeuDP5XTX0eOOA" name="" memberEnd="_vt5v8U07EeuDP5XTX0eOOA _vtdrEU07EeuDP5XTX0eOOA">
+          <ownedEnd xmi:id="_vt5v8U07EeuDP5XTX0eOOA" name="" type="_vqLtkE07EeuDP5XTX0eOOA" association="_vt5v8E07EeuDP5XTX0eOOA"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_vt5v8007EeuDP5XTX0eOOA" name="" memberEnd="_vt5v9E07EeuDP5XTX0eOOA _vte5ME07EeuDP5XTX0eOOA">
+          <ownedEnd xmi:id="_vt5v9E07EeuDP5XTX0eOOA" name="" type="_vqa-IE07EeuDP5XTX0eOOA" association="_vt5v8007EeuDP5XTX0eOOA"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_vt5v9k07EeuDP5XTX0eOOA" name="" memberEnd="_vt5v9007EeuDP5XTX0eOOA _vte5M007EeuDP5XTX0eOOA">
+          <ownedEnd xmi:id="_vt5v9007EeuDP5XTX0eOOA" name="" type="_vqhEwE07EeuDP5XTX0eOOA" association="_vt5v9k07EeuDP5XTX0eOOA"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_vt6XAE07EeuDP5XTX0eOOA" name="" memberEnd="_vt6XAU07EeuDP5XTX0eOOA _vtfgQk07EeuDP5XTX0eOOA">
+          <ownedEnd xmi:id="_vt6XAU07EeuDP5XTX0eOOA" name="" type="_vqkvIE07EeuDP5XTX0eOOA" association="_vt6XAE07EeuDP5XTX0eOOA"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_vt6XA007EeuDP5XTX0eOOA" name="" memberEnd="_vt6XBE07EeuDP5XTX0eOOA _vtx0IU07EeuDP5XTX0eOOA">
+          <ownedEnd xmi:id="_vt6XBE07EeuDP5XTX0eOOA" name="" type="_vqa-IE07EeuDP5XTX0eOOA" association="_vt6XA007EeuDP5XTX0eOOA"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Association" xmi:id="_vt6XBk07EeuDP5XTX0eOOA" name="" memberEnd="_vt6XB007EeuDP5XTX0eOOA _vtybME07EeuDP5XTX0eOOA">
+          <ownedEnd xmi:id="_vt6XB007EeuDP5XTX0eOOA" name="" type="_vqhEwE07EeuDP5XTX0eOOA" association="_vt6XBk07EeuDP5XTX0eOOA"/>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_vtTTAU07EeuDP5XTX0eOOA" name="Ex4_Const"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_vtaAsE07EeuDP5XTX0eOOA" name="java">
+      <packagedElement xmi:type="uml:Package" xmi:id="_vtaAsU07EeuDP5XTX0eOOA" name="lang">
+        <packagedElement xmi:type="uml:Class" xmi:id="_vtaAsk07EeuDP5XTX0eOOA" name="Object"/>
+      </packagedElement>
+    </packagedElement>
+    <profileApplication xmi:id="_vYW9wE07EeuDP5XTX0eOOA">
+      <eAnnotations xmi:id="_vYaBEE07EeuDP5XTX0eOOA" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile"/>
+    </profileApplication>
+  </uml:Model>
+  <UMLLabProfile:TargetLanguage xmi:id="_vYcdUE07EeuDP5XTX0eOOA" base_Package="_vG4MME07EeuDP5XTX0eOOA">
+    <languageName>java</languageName>
+  </UMLLabProfile:TargetLanguage>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_vp6AwE07EeuDP5XTX0eOOA" base_Element="_vp2WYE07EeuDP5XTX0eOOA"/>
+  <UMLLabProfile:Annotations xmi:id="_vp9EEE07EeuDP5XTX0eOOA" base_Element="_vp2WYE07EeuDP5XTX0eOOA">
+    <annotations xmi:id="_vp9EEU07EeuDP5XTX0eOOA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_vp-SME07EeuDP5XTX0eOOA" base_Element="_vp9rIE07EeuDP5XTX0eOOA"/>
+  <UMLLabProfile:Annotations xmi:id="_vp_gUE07EeuDP5XTX0eOOA" base_Element="_vp9rIE07EeuDP5XTX0eOOA">
+    <annotations xmi:id="_vp_gUU07EeuDP5XTX0eOOA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_vqBVgU07EeuDP5XTX0eOOA" base_Element="_vqAucE07EeuDP5XTX0eOOA"/>
+  <UMLLabProfile:Annotations xmi:id="_vqB8kE07EeuDP5XTX0eOOA" base_Element="_vqAucE07EeuDP5XTX0eOOA">
+    <annotations xmi:id="_vqB8kU07EeuDP5XTX0eOOA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_vqB8lE07EeuDP5XTX0eOOA" base_Element="_vqB8kk07EeuDP5XTX0eOOA"/>
+  <UMLLabProfile:Annotations xmi:id="_vqB8lU07EeuDP5XTX0eOOA" base_Element="_vqB8kk07EeuDP5XTX0eOOA">
+    <annotations xmi:id="_vqB8lk07EeuDP5XTX0eOOA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_vqCjoE07EeuDP5XTX0eOOA" base_Element="_vqB8l007EeuDP5XTX0eOOA"/>
+  <UMLLabProfile:Annotations xmi:id="_vqDKsE07EeuDP5XTX0eOOA" base_Element="_vqB8l007EeuDP5XTX0eOOA">
+    <annotations xmi:id="_vqDKsU07EeuDP5XTX0eOOA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:Array xmi:id="_vqDxwE07EeuDP5XTX0eOOA" base_Element="_vqDKsk07EeuDP5XTX0eOOA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_vqEY0E07EeuDP5XTX0eOOA" base_Element="_vqDKsk07EeuDP5XTX0eOOA"/>
+  <UMLLabProfile:Annotations xmi:id="_vqFm8E07EeuDP5XTX0eOOA" base_Element="_vqDKsk07EeuDP5XTX0eOOA">
+    <annotations xmi:id="_vqFm8U07EeuDP5XTX0eOOA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:Array xmi:id="_vqKfcE07EeuDP5XTX0eOOA" base_Element="_vqJRUE07EeuDP5XTX0eOOA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_vqPX9U07EeuDP5XTX0eOOA" base_Element="_vqPX8007EeuDP5XTX0eOOA"/>
+  <UMLLabProfile:Annotations xmi:id="_vqPX9k07EeuDP5XTX0eOOA" base_Element="_vqPX8007EeuDP5XTX0eOOA">
+    <annotations xmi:id="_vqP_AE07EeuDP5XTX0eOOA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_vqQmEU07EeuDP5XTX0eOOA" base_Element="_vqQmEE07EeuDP5XTX0eOOA"/>
+  <UMLLabProfile:Annotations xmi:id="_vqVekE07EeuDP5XTX0eOOA" base_Element="_vqQmEE07EeuDP5XTX0eOOA">
+    <annotations xmi:id="_vqVekU07EeuDP5XTX0eOOA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_vqWssU07EeuDP5XTX0eOOA" base_Element="_vqWFoE07EeuDP5XTX0eOOA"/>
+  <UMLLabProfile:Annotations xmi:id="_vqWssk07EeuDP5XTX0eOOA" base_Element="_vqWFoE07EeuDP5XTX0eOOA">
+    <annotations xmi:id="_vqWss007EeuDP5XTX0eOOA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_vqWstk07EeuDP5XTX0eOOA" base_Element="_vqWstE07EeuDP5XTX0eOOA"/>
+  <UMLLabProfile:Annotations xmi:id="_vqXTwE07EeuDP5XTX0eOOA" base_Element="_vqWstE07EeuDP5XTX0eOOA">
+    <annotations xmi:id="_vqXTwU07EeuDP5XTX0eOOA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_vqXTw007EeuDP5XTX0eOOA" base_Element="_vqXTwk07EeuDP5XTX0eOOA"/>
+  <UMLLabProfile:Annotations xmi:id="_vqXTxE07EeuDP5XTX0eOOA" base_Element="_vqXTwk07EeuDP5XTX0eOOA">
+    <annotations xmi:id="_vqXTxU07EeuDP5XTX0eOOA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:Array xmi:id="_vqX60k07EeuDP5XTX0eOOA" base_Element="_vqXTxk07EeuDP5XTX0eOOA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_vqX60007EeuDP5XTX0eOOA" base_Element="_vqXTxk07EeuDP5XTX0eOOA"/>
+  <UMLLabProfile:Annotations xmi:id="_vqX61E07EeuDP5XTX0eOOA" base_Element="_vqXTxk07EeuDP5XTX0eOOA">
+    <annotations xmi:id="_vqX61U07EeuDP5XTX0eOOA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_vqcMQU07EeuDP5XTX0eOOA" base_Element="_vqcMQE07EeuDP5XTX0eOOA"/>
+  <UMLLabProfile:Annotations xmi:id="_vqcMQk07EeuDP5XTX0eOOA" base_Element="_vqcMQE07EeuDP5XTX0eOOA">
+    <annotations xmi:id="_vqcMQ007EeuDP5XTX0eOOA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_vqczUU07EeuDP5XTX0eOOA" base_Element="_vqcMRE07EeuDP5XTX0eOOA"/>
+  <UMLLabProfile:Annotations xmi:id="_vqczUk07EeuDP5XTX0eOOA" base_Element="_vqcMRE07EeuDP5XTX0eOOA">
+    <annotations xmi:id="_vqczU007EeuDP5XTX0eOOA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_vqczVk07EeuDP5XTX0eOOA" base_Element="_vqczVE07EeuDP5XTX0eOOA"/>
+  <UMLLabProfile:Annotations xmi:id="_vqczV007EeuDP5XTX0eOOA" base_Element="_vqczVE07EeuDP5XTX0eOOA">
+    <annotations xmi:id="_vqczWE07EeuDP5XTX0eOOA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_vqczWk07EeuDP5XTX0eOOA" base_Element="_vqczWU07EeuDP5XTX0eOOA"/>
+  <UMLLabProfile:Annotations xmi:id="_vqdaYE07EeuDP5XTX0eOOA" base_Element="_vqczWU07EeuDP5XTX0eOOA">
+    <annotations xmi:id="_vqdaYU07EeuDP5XTX0eOOA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:Array xmi:id="_vqdaZU07EeuDP5XTX0eOOA" base_Element="_vqdaYk07EeuDP5XTX0eOOA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_vqdaZk07EeuDP5XTX0eOOA" base_Element="_vqdaYk07EeuDP5XTX0eOOA"/>
+  <UMLLabProfile:Annotations xmi:id="_vqdaZ007EeuDP5XTX0eOOA" base_Element="_vqdaYk07EeuDP5XTX0eOOA">
+    <annotations xmi:id="_vqdaaE07EeuDP5XTX0eOOA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_vqdaa007EeuDP5XTX0eOOA" base_Element="_vqdaaU07EeuDP5XTX0eOOA"/>
+  <UMLLabProfile:Annotations xmi:id="_vqeBcE07EeuDP5XTX0eOOA" base_Element="_vqdaaU07EeuDP5XTX0eOOA">
+    <annotations xmi:id="_vqeBcU07EeuDP5XTX0eOOA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_vqhr0E07EeuDP5XTX0eOOA" base_Element="_vqhEwU07EeuDP5XTX0eOOA"/>
+  <UMLLabProfile:Annotations xmi:id="_vqhr0U07EeuDP5XTX0eOOA" base_Element="_vqhEwU07EeuDP5XTX0eOOA">
+    <annotations xmi:id="_vqhr0k07EeuDP5XTX0eOOA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_vqiS4U07EeuDP5XTX0eOOA" base_Element="_vqhr0007EeuDP5XTX0eOOA"/>
+  <UMLLabProfile:Annotations xmi:id="_vqi58E07EeuDP5XTX0eOOA" base_Element="_vqhr0007EeuDP5XTX0eOOA">
+    <annotations xmi:id="_vqi58U07EeuDP5XTX0eOOA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_vqi59E07EeuDP5XTX0eOOA" base_Element="_vqi58k07EeuDP5XTX0eOOA"/>
+  <UMLLabProfile:Annotations xmi:id="_vqi59U07EeuDP5XTX0eOOA" base_Element="_vqi58k07EeuDP5XTX0eOOA">
+    <annotations xmi:id="_vqi59k07EeuDP5XTX0eOOA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_vqi5-E07EeuDP5XTX0eOOA" base_Element="_vqi59007EeuDP5XTX0eOOA"/>
+  <UMLLabProfile:Annotations xmi:id="_vqi5-U07EeuDP5XTX0eOOA" base_Element="_vqi59007EeuDP5XTX0eOOA">
+    <annotations xmi:id="_vqi5-k07EeuDP5XTX0eOOA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:Array xmi:id="_vqjhA007EeuDP5XTX0eOOA" base_Element="_vqjhAE07EeuDP5XTX0eOOA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_vqjhBE07EeuDP5XTX0eOOA" base_Element="_vqjhAE07EeuDP5XTX0eOOA"/>
+  <UMLLabProfile:Annotations xmi:id="_vqjhBU07EeuDP5XTX0eOOA" base_Element="_vqjhAE07EeuDP5XTX0eOOA">
+    <annotations xmi:id="_vqjhBk07EeuDP5XTX0eOOA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_vqjhCU07EeuDP5XTX0eOOA" base_Element="_vqjhB007EeuDP5XTX0eOOA"/>
+  <UMLLabProfile:Annotations xmi:id="_vqjhCk07EeuDP5XTX0eOOA" base_Element="_vqjhB007EeuDP5XTX0eOOA">
+    <annotations xmi:id="_vqjhC007EeuDP5XTX0eOOA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_vql9QE07EeuDP5XTX0eOOA" base_Element="_vqlWME07EeuDP5XTX0eOOA"/>
+  <UMLLabProfile:Annotations xmi:id="_vqmkUE07EeuDP5XTX0eOOA" base_Element="_vqlWME07EeuDP5XTX0eOOA">
+    <annotations xmi:id="_vqmkUU07EeuDP5XTX0eOOA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_vqmkVE07EeuDP5XTX0eOOA" base_Element="_vqmkUk07EeuDP5XTX0eOOA"/>
+  <UMLLabProfile:Annotations xmi:id="_vqmkVU07EeuDP5XTX0eOOA" base_Element="_vqmkUk07EeuDP5XTX0eOOA">
+    <annotations xmi:id="_vqmkVk07EeuDP5XTX0eOOA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_vqnLYE07EeuDP5XTX0eOOA" base_Element="_vqmkV007EeuDP5XTX0eOOA"/>
+  <UMLLabProfile:Annotations xmi:id="_vqnLYU07EeuDP5XTX0eOOA" base_Element="_vqmkV007EeuDP5XTX0eOOA">
+    <annotations xmi:id="_vqnLYk07EeuDP5XTX0eOOA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_vqnLZE07EeuDP5XTX0eOOA" base_Element="_vqnLY007EeuDP5XTX0eOOA"/>
+  <UMLLabProfile:Annotations xmi:id="_vqnLZU07EeuDP5XTX0eOOA" base_Element="_vqnLY007EeuDP5XTX0eOOA">
+    <annotations xmi:id="_vqnLZk07EeuDP5XTX0eOOA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:Array xmi:id="_vqnLak07EeuDP5XTX0eOOA" base_Element="_vqnLZ007EeuDP5XTX0eOOA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_vqnLa007EeuDP5XTX0eOOA" base_Element="_vqnLZ007EeuDP5XTX0eOOA"/>
+  <UMLLabProfile:Annotations xmi:id="_vqnycE07EeuDP5XTX0eOOA" base_Element="_vqnLZ007EeuDP5XTX0eOOA">
+    <annotations xmi:id="_vqnycU07EeuDP5XTX0eOOA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_vqnydE07EeuDP5XTX0eOOA" base_Element="_vqnyck07EeuDP5XTX0eOOA"/>
+  <UMLLabProfile:Annotations xmi:id="_vqnydU07EeuDP5XTX0eOOA" base_Element="_vqnyck07EeuDP5XTX0eOOA">
+    <annotations xmi:id="_vqnydk07EeuDP5XTX0eOOA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_vtC0UU07EeuDP5XTX0eOOA" base_Element="_vtCNRE07EeuDP5XTX0eOOA"/>
+  <UMLLabProfile:Annotations xmi:id="_vtDbYE07EeuDP5XTX0eOOA" base_Element="_vtCNRE07EeuDP5XTX0eOOA">
+    <annotations xmi:id="_vtDbYU07EeuDP5XTX0eOOA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_vtECcE07EeuDP5XTX0eOOA" base_Element="_vtDbY007EeuDP5XTX0eOOA"/>
+  <UMLLabProfile:Annotations xmi:id="_vtECcU07EeuDP5XTX0eOOA" base_Element="_vtDbY007EeuDP5XTX0eOOA">
+    <annotations xmi:id="_vtECck07EeuDP5XTX0eOOA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_vtNMYk07EeuDP5XTX0eOOA" base_Element="_vtMlWk07EeuDP5XTX0eOOA"/>
+  <UMLLabProfile:Annotations xmi:id="_vtNMY007EeuDP5XTX0eOOA" base_Element="_vtMlWk07EeuDP5XTX0eOOA">
+    <annotations xmi:id="_vtNMZE07EeuDP5XTX0eOOA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_vtNzc007EeuDP5XTX0eOOA" base_Element="_vtNzcU07EeuDP5XTX0eOOA"/>
+  <UMLLabProfile:Annotations xmi:id="_vtNzdE07EeuDP5XTX0eOOA" base_Element="_vtNzcU07EeuDP5XTX0eOOA">
+    <annotations xmi:id="_vtNzdU07EeuDP5XTX0eOOA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_vtRd2U07EeuDP5XTX0eOOA" base_Element="_vtRd1k07EeuDP5XTX0eOOA"/>
+  <UMLLabProfile:Annotations xmi:id="_vtSr8E07EeuDP5XTX0eOOA" base_Element="_vtRd1k07EeuDP5XTX0eOOA">
+    <annotations xmi:id="_vtSr8U07EeuDP5XTX0eOOA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_vtSr9U07EeuDP5XTX0eOOA" base_Element="_vtSr8007EeuDP5XTX0eOOA"/>
+  <UMLLabProfile:Annotations xmi:id="_vtSr9k07EeuDP5XTX0eOOA" base_Element="_vtSr8007EeuDP5XTX0eOOA">
+    <annotations xmi:id="_vtSr9007EeuDP5XTX0eOOA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:Reference xmi:id="_vtUhIE07EeuDP5XTX0eOOA" base_Element="_vtTTAU07EeuDP5XTX0eOOA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_vtVvQU07EeuDP5XTX0eOOA" base_Element="_vtVINk07EeuDP5XTX0eOOA"/>
+  <UMLLabProfile:Annotations xmi:id="_vtVvQk07EeuDP5XTX0eOOA" base_Element="_vtVINk07EeuDP5XTX0eOOA">
+    <annotations xmi:id="_vtVvQ007EeuDP5XTX0eOOA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_vtWWUk07EeuDP5XTX0eOOA" base_Element="_vtWWUE07EeuDP5XTX0eOOA"/>
+  <UMLLabProfile:Annotations xmi:id="_vtWWU007EeuDP5XTX0eOOA" base_Element="_vtWWUE07EeuDP5XTX0eOOA">
+    <annotations xmi:id="_vtWWVE07EeuDP5XTX0eOOA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_vtXkcU07EeuDP5XTX0eOOA" base_Element="_vtW9aE07EeuDP5XTX0eOOA"/>
+  <UMLLabProfile:Annotations xmi:id="_vtXkck07EeuDP5XTX0eOOA" base_Element="_vtW9aE07EeuDP5XTX0eOOA">
+    <annotations xmi:id="_vtXkc007EeuDP5XTX0eOOA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_vtXkd007EeuDP5XTX0eOOA" base_Element="_vtXkdU07EeuDP5XTX0eOOA"/>
+  <UMLLabProfile:Annotations xmi:id="_vtYLgE07EeuDP5XTX0eOOA" base_Element="_vtXkdU07EeuDP5XTX0eOOA">
+    <annotations xmi:id="_vtYLgU07EeuDP5XTX0eOOA" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:Reference xmi:id="_vtanwE07EeuDP5XTX0eOOA" base_Element="_vtaAsk07EeuDP5XTX0eOOA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_vtcc8E07EeuDP5XTX0eOOA" base_Element="_vtb14E07EeuDP5XTX0eOOA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_vtcc8k07EeuDP5XTX0eOOA" base_Element="_vtcc8U07EeuDP5XTX0eOOA"/>
+  <UMLLabProfile:MultiDeclaration xmi:id="_vtdEAk07EeuDP5XTX0eOOA" base_Property="_vtdEAE07EeuDP5XTX0eOOA" siblings="_vtvX6U07EeuDP5XTX0eOOA _vtwmAE07EeuDP5XTX0eOOA" root="true"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_vtdrEE07EeuDP5XTX0eOOA" base_Element="_vtdEAE07EeuDP5XTX0eOOA"/>
+  <UMLLabProfile:MultiDeclaration xmi:id="_vteSIE07EeuDP5XTX0eOOA" base_Property="_vtdrE007EeuDP5XTX0eOOA" siblings="_vtxNEE07EeuDP5XTX0eOOA" root="true"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_vteSIU07EeuDP5XTX0eOOA" base_Element="_vtdrE007EeuDP5XTX0eOOA"/>
+  <UMLLabProfile:MultiDeclaration xmi:id="_vte5MU07EeuDP5XTX0eOOA" base_Property="_vte5ME07EeuDP5XTX0eOOA" siblings="_vtx0IU07EeuDP5XTX0eOOA" root="true"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_vte5Mk07EeuDP5XTX0eOOA" base_Element="_vte5ME07EeuDP5XTX0eOOA"/>
+  <UMLLabProfile:MultiDeclaration xmi:id="_vtfgQE07EeuDP5XTX0eOOA" base_Property="_vte5M007EeuDP5XTX0eOOA" siblings="_vtybME07EeuDP5XTX0eOOA" root="true"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_vtfgQU07EeuDP5XTX0eOOA" base_Element="_vte5M007EeuDP5XTX0eOOA"/>
+  <UMLLabProfile:Array xmi:id="_vtgHUE07EeuDP5XTX0eOOA" base_Element="_vtfgQk07EeuDP5XTX0eOOA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_vtgHUU07EeuDP5XTX0eOOA" base_Element="_vtfgQk07EeuDP5XTX0eOOA"/>
+  <UMLLabProfile:MultiDeclaration xmi:id="_vtv-8E07EeuDP5XTX0eOOA" base_Property="_vtvX6U07EeuDP5XTX0eOOA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_vtv-8U07EeuDP5XTX0eOOA" base_Element="_vtvX6U07EeuDP5XTX0eOOA"/>
+  <UMLLabProfile:MultiDeclaration xmi:id="_vtwmAU07EeuDP5XTX0eOOA" base_Property="_vtwmAE07EeuDP5XTX0eOOA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_vtwmAk07EeuDP5XTX0eOOA" base_Element="_vtwmAE07EeuDP5XTX0eOOA"/>
+  <UMLLabProfile:MultiDeclaration xmi:id="_vtxNEU07EeuDP5XTX0eOOA" base_Property="_vtxNEE07EeuDP5XTX0eOOA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_vtxNEk07EeuDP5XTX0eOOA" base_Element="_vtxNEE07EeuDP5XTX0eOOA"/>
+  <UMLLabProfile:MultiDeclaration xmi:id="_vtx0Ik07EeuDP5XTX0eOOA" base_Property="_vtx0IU07EeuDP5XTX0eOOA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_vtx0I007EeuDP5XTX0eOOA" base_Element="_vtx0IU07EeuDP5XTX0eOOA"/>
+  <UMLLabProfile:MultiDeclaration xmi:id="_vtybMU07EeuDP5XTX0eOOA" base_Property="_vtybME07EeuDP5XTX0eOOA"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_vtybMk07EeuDP5XTX0eOOA" base_Element="_vtybME07EeuDP5XTX0eOOA"/>
+  <UMLLabProfile:Reference xmi:id="_vt5I4E07EeuDP5XTX0eOOA" base_Element="_vt4h0E07EeuDP5XTX0eOOA"/>
+  <UMLLabProfile:Reference xmi:id="_vt5I4007EeuDP5XTX0eOOA" base_Element="_vt5I4U07EeuDP5XTX0eOOA"/>
+  <UMLLabProfile:Reference xmi:id="_vt5v8k07EeuDP5XTX0eOOA" base_Element="_vt5v8E07EeuDP5XTX0eOOA"/>
+  <UMLLabProfile:Reference xmi:id="_vt5v9U07EeuDP5XTX0eOOA" base_Element="_vt5v8007EeuDP5XTX0eOOA"/>
+  <UMLLabProfile:Reference xmi:id="_vt5v-E07EeuDP5XTX0eOOA" base_Element="_vt5v9k07EeuDP5XTX0eOOA"/>
+  <UMLLabProfile:Reference xmi:id="_vt6XAk07EeuDP5XTX0eOOA" base_Element="_vt6XAE07EeuDP5XTX0eOOA"/>
+  <UMLLabProfile:Reference xmi:id="_vt6XBU07EeuDP5XTX0eOOA" base_Element="_vt6XA007EeuDP5XTX0eOOA"/>
+  <UMLLabProfile:Reference xmi:id="_vt6XCE07EeuDP5XTX0eOOA" base_Element="_vt6XBk07EeuDP5XTX0eOOA"/>
+</xmi:XMI>

@@ -1,6 +1,7 @@
 package ex4.tests;
 
 import java.awt.Color;
+import java.util.Random;
 import java.util.Scanner;
 
 import ex4.Ex4;
@@ -17,115 +18,68 @@ import ex4.geometry.*;
  * with respect to creating geo and gui shapes, adding shapes to a GUI container,
  * using a GUI present the shapes and performing save and load.
  * 
- * output example:
- * ****************
- * Enter a sorting method (a number in [0-6]): 0
-**** Sorting according to flag=0 ****
-GUIShape,255,false,0,Point2D,0.2,0.4
-GUIShape,16711680,true,1,Circle2D,0.1,0.2, 0.14
-GUIShape,65280,true,2,Rect2D,0.1,0.2,0.5,0.45
-GUIShape,65535,false,3,Rect2D,0.1,0.2,0.17,0.77
-GUIShape,16762880,false,4,Triangle2D,0.8,0.7,0.3,0.65,0.1,0.1
-GUIShape,16756655,false,5,Segment2D,0.2,0.6,0.7,0.2
-GUIShape,8421504,false,6,Rect2D,-0.04000000000000001,0.06,0.8,0.77
-
-
-Enter a sorting method (a number in [0-6]): 1
-**** Sorting according to flag=1 ****
-GUIShape,8421504,false,6,Rect2D,-0.04000000000000001,0.06,0.8,0.77
-GUIShape,16756655,false,5,Segment2D,0.2,0.6,0.7,0.2
-GUIShape,16762880,false,4,Triangle2D,0.8,0.7,0.3,0.65,0.1,0.1
-GUIShape,65535,false,3,Rect2D,0.1,0.2,0.17,0.77
-GUIShape,65280,true,2,Rect2D,0.1,0.2,0.5,0.45
-GUIShape,16711680,true,1,Circle2D,0.1,0.2, 0.14
-GUIShape,255,false,0,Point2D,0.2,0.4
-
-
-Enter a sorting method (a number in [0-6]): 2
-**** Sorting according to flag=2 ****
-GUIShape,16756655,false,5,Segment2D,0.2,0.6,0.7,0.2
-GUIShape,255,false,0,Point2D,0.2,0.4
-GUIShape,65535,false,3,Rect2D,0.1,0.2,0.17,0.77
-GUIShape,16711680,true,1,Circle2D,0.1,0.2, 0.14
-GUIShape,65280,true,2,Rect2D,0.1,0.2,0.5,0.45
-GUIShape,16762880,false,4,Triangle2D,0.8,0.7,0.3,0.65,0.1,0.1
-GUIShape,8421504,false,6,Rect2D,-0.04000000000000001,0.06,0.8,0.77
-
-
-Enter a sorting method (a number in [0-6]): 3
-**** Sorting according to flag=3 ****
-GUIShape,8421504,false,6,Rect2D,-0.04000000000000001,0.06,0.8,0.77
-GUIShape,16762880,false,4,Triangle2D,0.8,0.7,0.3,0.65,0.1,0.1
-GUIShape,65280,true,2,Rect2D,0.1,0.2,0.5,0.45
-GUIShape,16711680,true,1,Circle2D,0.1,0.2, 0.14
-GUIShape,65535,false,3,Rect2D,0.1,0.2,0.17,0.77
-GUIShape,16756655,false,5,Segment2D,0.2,0.6,0.7,0.2
-GUIShape,255,false,0,Point2D,0.2,0.4
-
-
-Enter a sorting method (a number in [0-6]): 4
-**** Sorting accurding to flag=4 ****
-GUIShape,255,false,0,Point2D,0.2,0.4
-GUIShape,16711680,true,1,Circle2D,0.1,0.2, 0.14
-GUIShape,65535,false,3,Rect2D,0.1,0.2,0.17,0.77
-GUIShape,16756655,false,5,Segment2D,0.2,0.6,0.7,0.2
-GUIShape,65280,true,2,Rect2D,0.1,0.2,0.5,0.45
-GUIShape,16762880,false,4,Triangle2D,0.8,0.7,0.3,0.65,0.1,0.1
-GUIShape,8421504,false,6,Rect2D,-0.04000000000000001,0.06,0.8,0.77
-
-
-Enter a sorting method (a number in [0-6]): 5
-**** Sorting according to flag=5 ****
-GUIShape,8421504,false,6,Rect2D,-0.04000000000000001,0.06,0.8,0.77
-GUIShape,16762880,false,4,Triangle2D,0.8,0.7,0.3,0.65,0.1,0.1
-GUIShape,65280,true,2,Rect2D,0.1,0.2,0.5,0.45
-GUIShape,16756655,false,5,Segment2D,0.2,0.6,0.7,0.2
-GUIShape,65535,false,3,Rect2D,0.1,0.2,0.17,0.77
-GUIShape,16711680,true,1,Circle2D,0.1,0.2, 0.14
-GUIShape,255,false,0,Point2D,0.2,0.4
-
-
-Enter a sorting method (a number in [0-6]): 6
-**** Sorting according to flag=6 ****
-GUIShape,16711680,true,1,Circle2D,0.1,0.2, 0.14
-GUIShape,16756655,false,5,Segment2D,0.2,0.6,0.7,0.2
-GUIShape,16762880,false,4,Triangle2D,0.8,0.7,0.3,0.65,0.1,0.1
-GUIShape,255,false,0,Point2D,0.2,0.4
-GUIShape,65280,true,2,Rect2D,0.1,0.2,0.5,0.45
-GUIShape,65535,false,3,Rect2D,0.1,0.2,0.17,0.77
-GUIShape,8421504,false,6,Rect2D,-0.04000000000000001,0.06,0.8,0.77
-
-
-Enter a sorting method (a number in [0-6]): -1
-Done! bye bye..
- * 
  * @author boaz.benmoshe
  *
  */
 public class Test_Ex4 {
+	static Color[] _colors = {Color.black, Color.blue, Color.cyan, Color.red, Color.green, Color.gray, Color.orange, Color.magenta, Color.pink};
 	public static void main(String[] a) {
 		test0();
-	//	test1(); // 	once you compete the implementation you can try test1 as well
-	//	test2(); // 	once you compete the implementation you can try test2 as well
+	//	test1();
+	//	test2();
 	}
 	public static void test0() {
-		Point2D p1 = new Point2D(0.1,0.2);
-		
-		Circle2D c1 = new Circle2D(p1,0.14);
-		//Rect2D r1 = new Rect2D(p1, new Point2D(0.5,0.45));
-		//Rect2D r2 = new Rect2D(p1, new Point2D(0.17,0.77));
-		Point2D a1 = new Point2D(0.8,0.7), a2 = new Point2D(0.3,0.65), a3 = new Point2D(0.1,0.1);;
-		//Triangle2D t1 = new Triangle2D(a1,a2,a3);
-		p1.move(p1);
-		//Segment2D seg1 = new Segment2D(new Point2D(0.2,0.6), new Point2D(0.7,0.2));
-		int tag=0;
-		GUI_Shape s1 = new GUIShape();
-		s1.setColor(Color.blue);
-		s1.setFilled(true);
-		s1.setTag(tag++);
-		s1.setShape(c1);
+		Ex4 win = new Ex4();
+		GUI_Shape_Collection sc = win.getShape_Collection();
+		int size = 10000;
+		long seed = 1;
+		double r = 1000;
+		Random rd = new Random(seed);
+		for(int i=0;i<size;i++) {
+			double x = rd.nextDouble(), y = rd.nextDouble();
+			Point2D p1 = new Point2D(x*r,y*r);
+			x = rd.nextDouble(); y = rd.nextDouble();
+			Point2D p2 = new Point2D(x*r,y*r);
+			GUI_Shape s1 = null;
+			double c1 = rd.nextDouble();
+			Color c = getColor(c1);
+			double f = rd.nextDouble();
+			boolean bf = rd.nextBoolean();
+			if(f<0.2) {
+				s1 = new GUIShape(p1,bf, c, i);
+			}
+			if(f>=0.2 && f<0.4) {
+				Rect2D r1 = new Rect2D(p1,p2);
+				s1 = new GUIShape(r1,bf, c, i);
+			}
+			if(f>=0.4 && f<0.6) {
+				Segment2D r1 = new Segment2D(p1,p2);
+				s1 = new GUIShape(r1,bf, c, i);
+			}
+			if(f>=0.6 && f<0.8) {
+				x = rd.nextDouble(); y = rd.nextDouble();
+				Point2D p3 = new Point2D(x*r,y*r);
+				Triangle2D t1 = new Triangle2D(p1,p2,p3);
+				s1 = new GUIShape(t1, bf, c, i);
+			}
+			if(f>=0.8) {
+				Circle2D r1 = new Circle2D(p1,p2.distance(p1)/2);
+				s1 = new GUIShape(r1,bf, c, i);
+			}
+			
+			sc.add(s1);
+		}
+	 
+		System.out.println(sc);
+		sc.save("Shapes_"+size+"_save.txt");
 	}
-/*	public static void test1() {
+	private static Color getColor(double d) {
+		int s = _colors.length;
+		int t = (int)(d*s);
+		Color ans = _colors[t];
+		return ans;
+	}
+	public static void test1() {
 		Ex4 win = new Ex4();
 		GUI_Shape_Collection sc = win.getShape_Collection();
 		Point2D p1 = new Point2D(0.1,0.2);
@@ -162,18 +116,7 @@ public class Test_Ex4 {
 		win.show();
 		System.out.println(sc);
 		sc.save("test_save.txt");
-	} */
-	/**
-Name, 	 Color,fill,tag,geo-shape (in case of circle2d radius is the last number).
-	 * File saved:
-GUIShape,255,false,0,Point2D,0.2,0.4
-GUIShape,16711680,true,1,Circle2D,0.1,0.2, 0.14
-GUIShape,65280,true,2,Rect2D,0.1,0.2,0.5,0.45
-GUIShape,65535,false,3,Rect2D,0.1,0.2,0.17,0.77
-GUIShape,16762880,false,4,Triangle2D,0.8,0.7,0.3,0.65,0.1,0.1
-GUIShape,16756655,false,5,Segment2D,0.2,0.6,0.7,0.2
-GUIShape,8421504,false,6,Rect2D,-0.04000000000000001,0.06,0.8,0.77
-	 */
+	}
 	public static void test2() {
 		Ex4 win = new Ex4();
 		GUI_Shape_Collection sc = win.getShape_Collection();
@@ -191,5 +134,5 @@ GUIShape,8421504,false,6,Rect2D,-0.04000000000000001,0.06,0.8,0.77
 			System.out.println();
 			win.show();
 		}
-	}
+}
 }

@@ -1,4 +1,7 @@
 package ex4.geometry;
+
+import ex4.Ex4_Const;
+
 /**
  * This class represents a 2D axis parallel rectangle.
  * Ex4: you should implement this class!
@@ -66,6 +69,14 @@ public class Rect2D implements GeoShape{
 	@Override
 	public String toString() {
 		String ans = _min+","+_max;
+		return ans;
+	}
+	@Override 
+	public boolean equals(Object t) {
+		if(t==null || !(t instanceof Rect2D)) {return false;}
+		Rect2D ot = (Rect2D)t;
+		boolean ans = this._min.equals(ot._min);
+		ans &= this._max.equals(ot._max);
 		return ans;
 	}
 

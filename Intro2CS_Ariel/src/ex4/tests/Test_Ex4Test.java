@@ -56,8 +56,8 @@ class Test_Ex4Test {
 			else {i=i+1;}
 		}
 	//	System.out.println(sc.size());
-		assertTrue(sc.size()==906);
-		log("pass test2.1 (906) ");
+		assertTrue(sc.size()==865);
+		log("pass test2.1 (865) ");
 		grade(20);
 		i=0;
 		while(i<sc.size()) {

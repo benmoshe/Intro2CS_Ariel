@@ -56,7 +56,15 @@ class Triangle2DTest {
 
 	@Test
 	void testMove() {
-	//	fail("Not yet implemented");
+		Triangle2D t1 = new Triangle2D(_p1,_p2,_p3);
+		Triangle2D t1a = new Triangle2D(t1);
+		assertEquals(t1, t1a);
+		Point2D p1 = new Point2D(0,0.1);
+		t1a.move(p1);
+		assertNotEquals(t1, t1a);
+		Point2D p11 = new Point2D(-p1.x(), -p1.y());
+		t1a.move(p11);
+		assertEquals(t1, t1a);
 	}
 
 	@Test
@@ -69,11 +77,11 @@ class Triangle2DTest {
 		Triangle2D t1 = new Triangle2D(_p1,_p2,_p3);
 		Point2D[] tt = t1.getPoints();
 		Triangle2D t2 = new Triangle2D(tt[1],tt[0],tt[2]);
-		assertEquals(t1.centerOfMass(),t2.centerOfMass());
+		assertEquals(t1,t2);
 		assertEquals(t1.area(),t2.area(), Ex4_Const.EPS);
 		assertEquals(t1.perimeter(),t2.perimeter(), Ex4_Const.EPS);
 		t2.move(_p2);
-		assertNotEquals(t1.centerOfMass(),t2.centerOfMass());
+		assertNotEquals(t1, t2);
 		assertEquals(t1.area(),t2.area(), Ex4_Const.EPS);
 		assertEquals(t1.perimeter(),t2.perimeter(), Ex4_Const.EPS);
 	}

@@ -67,4 +67,16 @@ public class Segment2D implements GeoShape{
 		String ans = _p1+","+_p2;//
 		return ans;
 	}
+	@Override 
+	public boolean equals(Object t) {
+		if(t==null || !(t instanceof Segment2D)) {return false;}
+		Segment2D ot = (Segment2D)t;
+		double d11 = this._p1.distance(ot._p1);
+		double d22 = this._p2.distance(ot._p2);
+		double d12 = this._p1.distance(ot._p2);
+		double d21 = this._p2.distance(ot._p1);
+		
+		boolean ans = (d11<Ex4_Const.EPS && d22<Ex4_Const.EPS) | (d12<Ex4_Const.EPS && d21<Ex4_Const.EPS);
+		return ans;
+	}
 }

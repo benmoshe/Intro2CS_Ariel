@@ -13,6 +13,9 @@ public class Segment2D implements GeoShape{
 		_p1=new Point2D(a);
 		_p2=new Point2D(b);
 	}
+	public Segment2D(Segment2D t1) {
+		this(t1._p1, t1._p2);
+	}
 	@Override
 	public boolean contains(Point2D ot) {
 		boolean ans = false;

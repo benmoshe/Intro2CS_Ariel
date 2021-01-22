@@ -18,6 +18,9 @@ public class Rect2D implements GeoShape{
 		_min = new Point2D(x0,y0);
 		_max = new Point2D(x1,y1);
 	}
+	public Rect2D(Rect2D t1) {this(t1._min, t1._max);
+		// TODO Auto-generated constructor stub
+	}
 	public double width() {return _max.x()-_min.x();}
 	public double height() {return _max.y()-_min.y();}
 	@Override

@@ -2,7 +2,10 @@ package week12;
 
 import static org.junit.jupiter.api.Assertions.*;
 
+import java.util.concurrent.TimeUnit;
+
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.Timeout;
 
 class MyListTest {
 
@@ -12,7 +15,7 @@ class MyListTest {
 		assertTrue(l.isEmpty());
 		System.out.println(l);
 	}
-
+	@Timeout(value = 500, unit = TimeUnit.MILLISECONDS)
 	@Test
 	void testAdd() {
 		MyList<Point2D> l = new MyList<Point2D>();

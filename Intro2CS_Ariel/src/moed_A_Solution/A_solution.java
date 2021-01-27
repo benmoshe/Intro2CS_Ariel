@@ -33,7 +33,8 @@ public class A_solution {
 			if(c=='r'){ans = r(d1);}
 		}
 		else { 
-			if(c=='(') {ans = calc(f.substring(1,f.length()-1));}
+			char e = f.charAt(f.length()-1);
+			if(c=='(' && e==')') {ans = calc(f.substring(1,f.length()-1));}
 			else {ans = Integer.parseInt(f);}
 		}
 		return ans;

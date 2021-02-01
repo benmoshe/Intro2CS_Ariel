@@ -17,7 +17,7 @@ class Test_Ex4Test {
 		GUI_Shape_Collection sc = win.getShape_Collection();
 		String f = "Shapes_1000_save.txt";
 		sc.load(f);
-		win.show();
+	//	win.show();
 		assertTrue(sc.size()==1001);
 		log("pass test1 ");
 		grade(20);
@@ -28,7 +28,7 @@ class Test_Ex4Test {
 		GUI_Shape_Collection sc = win.getShape_Collection();
 		GUI_Shape_Collection sc1 = win.getShape_Collection();
 		String f = "Shapes_10_save.txt";
-
+		sc.load(f);
 		sc.save("t.txt");
 		sc1.load("t.txt");
 		sc.sort(new Shape_Comp(Ex4_Const.Sort_By_toString));
@@ -91,7 +91,7 @@ class Test_Ex4Test {
 		long end = new Date().getTime();
 		double dt = (end-start) / 1000.0;
 		assertTrue(dt<0.5);
-		log("pass test4.7 - runtime < 1.5 sec");
+		log("pass test4.7 - runtime < 0.5 sec");
 		grade(10);
 	}
 	
